@@ -22,6 +22,7 @@
 		DF4B9AF6174AD72800ED4D13 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DF4B9AF5174AD72800ED4D13 /* libsqlite3.dylib */; };
 		DF4B9AF8174AD73100ED4D13 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DF4B9AF7174AD73100ED4D13 /* libz.dylib */; };
 		DF4B9AFA174AD75600ED4D13 /* MapBox.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DF4B9AF9174AD75600ED4D13 /* MapBox.bundle */; };
+		DF4B9AFD174AD9E800ED4D13 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4B9AFC174AD9E800ED4D13 /* MapViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,8 @@
 		DF4B9AF5174AD72800ED4D13 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		DF4B9AF7174AD73100ED4D13 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		DF4B9AF9174AD75600ED4D13 /* MapBox.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MapBox.bundle; path = ../MapBox.framework/Versions/A/Resources/MapBox.bundle; sourceTree = "<group>"; };
+		DF4B9AFB174AD9E800ED4D13 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		DF4B9AFC174AD9E800ED4D13 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,8 @@
 				DF4B9AE1174AD44B00ED4D13 /* AppDelegate.h */,
 				DF4B9AE2174AD44B00ED4D13 /* AppDelegate.m */,
 				DF4B9AD9174AD44B00ED4D13 /* Supporting Files */,
+				DF4B9AFB174AD9E800ED4D13 /* MapViewController.h */,
+				DF4B9AFC174AD9E800ED4D13 /* MapViewController.m */,
 			);
 			path = poposiphone;
 			sourceTree = "<group>";
@@ -190,6 +195,7 @@
 			files = (
 				DF4B9ADF174AD44B00ED4D13 /* main.m in Sources */,
 				DF4B9AE3174AD44B00ED4D13 /* AppDelegate.m in Sources */,
+				DF4B9AFD174AD9E800ED4D13 /* MapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
