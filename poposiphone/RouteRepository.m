@@ -29,7 +29,7 @@
     NSMutableArray *arr = [NSMutableArray array];
     
     for (NSArray *pair in json[@"coordinates"]) {
-        CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake([pair[0] floatValue],[pair[1] floatValue]);
+        CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake([pair[1] floatValue],[pair[0] floatValue]);
         [arr addObject:[NSValue valueWithBytes:&coordinate objCType:@encode(CLLocationCoordinate2D)]];
     }
     return [[Route alloc] initWithCoordinates:arr];
