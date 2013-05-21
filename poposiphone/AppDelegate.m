@@ -14,8 +14,11 @@
 
     SpaceRepository *spaceRepository = [[SpaceRepository alloc] init];
     [spaceRepository populateFromGeoJSONFile:@"sfpopos.geojson"];
+
+    RouteRepository *routeRepository = [[RouteRepository alloc] init];
+    [routeRepository populateFromGeoJSONFile:@"sfpopos-routes.geojson"];
     
-    UIViewController *mapViewController = [[MapViewController alloc] initWithSpaceRepository:spaceRepository];
+    UIViewController *mapViewController = [[MapViewController alloc] initWithSpaceRepository:spaceRepository routeRepository:routeRepository];
     UINavigationController *mapNavController = [[UINavigationController alloc] initWithRootViewController:mapViewController];
 
     tabBarController.viewControllers = @[mapNavController];
