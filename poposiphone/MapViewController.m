@@ -38,6 +38,7 @@ NSString *kStamenAttribution = @"Map tiles by <a href=\"http://stamen.com\">Stam
     RMMapBoxSource *onlineSource = [[RMMapBoxSource alloc] initWithTileJSON:tileJSON];
     RMMapView *mapView = [[RMMapView alloc] initWithFrame:self.view.bounds andTilesource:onlineSource];
 
+    mapView.showLogoBug = NO;
     mapView.zoom = 17;
     mapView.centerCoordinate = CLLocationCoordinate2DMake(37.7920,-122.399);
     mapView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
