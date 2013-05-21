@@ -22,10 +22,7 @@ NSString *kStamenAttribution = @"Map tiles by <a href=\"http://stamen.com\">Stam
     return self;
 }
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    
++ (RMMapBoxSource *) tileSourceWithUrl:(NSString *)url {
     NSDictionary *tileJsonDict = @{ @"tilejson": @"2.0.0",
                                     @"tiles": @[@"http://tile.stamen.com/watercolor/{z}/{x}/{y}.jpg"],
                                     @"minzoom":@(1),
@@ -33,16 +30,23 @@ NSString *kStamenAttribution = @"Map tiles by <a href=\"http://stamen.com\">Stam
                                     @"attribution":kStamenAttribution};
     NSError *error;
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:tileJsonDict
-                                            options:NSJSONWritingPrettyPrinted
-                                            error:&error];
+                                                       options:NSJSONWritingPrettyPrinted
+                                                         error:&error];
     NSString *tileJSON = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+    return [[RMMapBoxSource alloc] initWithTileJSON:tileJSON];
+}
 
-    RMMapBoxSource *onlineSource = [[RMMapBoxSource alloc] initWithTileJSON:tileJSON];
-    RMMapView *mapView = [[RMMapView alloc] initWithFrame:self.view.bounds andTilesource:onlineSource];
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+
+    RMMapView *mapView = [[RMMapView alloc] initWithFrame:self.view.bounds andTilesource:[MapViewController tileSourceWithUrl:@"http://tile.stamen.com/watercolor/{z}/{x}/{y}.jpg"]];
+    [mapView addTileSource:[MapViewController tileSourceWithUrl:@"http://tile.stamen.com/toner-labels/{z}/{x}/{y}.png"]]; // This doesn't seem to work.
+
+    mapView.debugTiles = YES;
     mapView.delegate = self;
-    
     mapView.showLogoBug = NO;
-    mapView.zoom = 17;
+    mapView.zoom = 15;
     mapView.centerCoordinate = CLLocationCoordinate2DMake(37.7920,-122.399);
     mapView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     [self.view addSubview:mapView];
