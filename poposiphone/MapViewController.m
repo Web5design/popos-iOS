@@ -9,6 +9,8 @@
 
 @implementation MapViewController
 
+NSString *kStamenAttribution = @"Map tiles by <a href=\"http://stamen.com\">Stamen Design</a>, under <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a>. Data by <a href=\"http://openstreetmap.org\">OpenStreetMap</a>, under <a href=\"http://creativecommons.org/licenses/by-sa/3.0\">CC BY SA</a>.";
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -22,14 +24,11 @@
 {
     [super viewDidLoad];
 
-    NSString *stamenAttribution = @"Map tiles by <a href=\"http://stamen.com\">Stamen Design</a>, under <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a>. Data by <a href=\"http://openstreetmap.org\">OpenStreetMap</a>, under <a href=\"http://creativecommons.org/licenses/by-sa/3.0\">CC BY SA</a>.";
-
     NSDictionary *tileJsonDict = @{ @"tilejson": @"2.0.0",
                                     @"tiles": @[@"http://tile.stamen.com/watercolor/{z}/{x}/{y}.jpg"],
                                     @"minzoom":@(1),
                                     @"maxzoom":@(16),
-                                    @"attribution":stamenAttribution};
-
+                                    @"attribution":kStamenAttribution};
     NSError *error;
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:tileJsonDict
                                             options:NSJSONWritingPrettyPrinted
