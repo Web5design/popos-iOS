@@ -24,6 +24,10 @@
 		DF4B9AFA174AD75600ED4D13 /* MapBox.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DF4B9AF9174AD75600ED4D13 /* MapBox.bundle */; };
 		DF4B9AFD174AD9E800ED4D13 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4B9AFC174AD9E800ED4D13 /* MapViewController.m */; };
 		DF4B9B01174B38C400ED4D13 /* sfpopos.geojson in Resources */ = {isa = PBXBuildFile; fileRef = DF4B9B00174B38C400ED4D13 /* sfpopos.geojson */; };
+		DF4B9B04174B39B700ED4D13 /* Space.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4B9B03174B39B700ED4D13 /* Space.m */; };
+		DF4B9B07174B3A0500ED4D13 /* SpaceRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4B9B06174B3A0500ED4D13 /* SpaceRepository.m */; };
+		DF4B9B0B174B429800ED4D13 /* SpaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4B9B09174B429800ED4D13 /* SpaceViewController.m */; };
+		DF4B9B0C174B429800ED4D13 /* SpaceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF4B9B0A174B429800ED4D13 /* SpaceViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +53,13 @@
 		DF4B9AFB174AD9E800ED4D13 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		DF4B9AFC174AD9E800ED4D13 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		DF4B9B00174B38C400ED4D13 /* sfpopos.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sfpopos.geojson; sourceTree = "<group>"; };
+		DF4B9B02174B39B700ED4D13 /* Space.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Space.h; sourceTree = "<group>"; };
+		DF4B9B03174B39B700ED4D13 /* Space.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Space.m; sourceTree = "<group>"; };
+		DF4B9B05174B3A0500ED4D13 /* SpaceRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceRepository.h; sourceTree = "<group>"; };
+		DF4B9B06174B3A0500ED4D13 /* SpaceRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceRepository.m; sourceTree = "<group>"; };
+		DF4B9B08174B429800ED4D13 /* SpaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceViewController.h; sourceTree = "<group>"; };
+		DF4B9B09174B429800ED4D13 /* SpaceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceViewController.m; sourceTree = "<group>"; };
+		DF4B9B0A174B429800ED4D13 /* SpaceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SpaceViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +122,13 @@
 				DF4B9AD9174AD44B00ED4D13 /* Supporting Files */,
 				DF4B9AFB174AD9E800ED4D13 /* MapViewController.h */,
 				DF4B9AFC174AD9E800ED4D13 /* MapViewController.m */,
+				DF4B9B02174B39B700ED4D13 /* Space.h */,
+				DF4B9B03174B39B700ED4D13 /* Space.m */,
+				DF4B9B05174B3A0500ED4D13 /* SpaceRepository.h */,
+				DF4B9B06174B3A0500ED4D13 /* SpaceRepository.m */,
+				DF4B9B08174B429800ED4D13 /* SpaceViewController.h */,
+				DF4B9B09174B429800ED4D13 /* SpaceViewController.m */,
+				DF4B9B0A174B429800ED4D13 /* SpaceViewController.xib */,
 			);
 			path = poposiphone;
 			sourceTree = "<group>";
@@ -187,6 +205,7 @@
 				DF4B9AE9174AD44B00ED4D13 /* Default-568h@2x.png in Resources */,
 				DF4B9AFA174AD75600ED4D13 /* MapBox.bundle in Resources */,
 				DF4B9B01174B38C400ED4D13 /* sfpopos.geojson in Resources */,
+				DF4B9B0C174B429800ED4D13 /* SpaceViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +219,9 @@
 				DF4B9ADF174AD44B00ED4D13 /* main.m in Sources */,
 				DF4B9AE3174AD44B00ED4D13 /* AppDelegate.m in Sources */,
 				DF4B9AFD174AD9E800ED4D13 /* MapViewController.m in Sources */,
+				DF4B9B04174B39B700ED4D13 /* Space.m in Sources */,
+				DF4B9B07174B3A0500ED4D13 /* SpaceRepository.m in Sources */,
+				DF4B9B0B174B429800ED4D13 /* SpaceViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

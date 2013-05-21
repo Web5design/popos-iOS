@@ -1,19 +1,21 @@
 #import "AppDelegate.h"
 #import "MapViewController.h"
+#import "SpaceRepository.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
 
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
     self.window.rootViewController = tabBarController;
 
-    UIViewController *mapViewController = [[MapViewController alloc] init];
+    SpaceRepository *spaceRepository = [[SpaceRepository alloc] init];
+    [spaceRepository populateFromGeoJSONFile:@"sfpopos.geojson"];
+    
+    UIViewController *mapViewController = [[MapViewController alloc] initWithSpaceRepository:spaceRepository];
     UINavigationController *mapNavController = [[UINavigationController alloc] initWithRootViewController:mapViewController];
 
     tabBarController.viewControllers = @[mapNavController];
