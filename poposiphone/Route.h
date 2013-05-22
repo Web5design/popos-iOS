@@ -1,5 +1,6 @@
 @interface Route : NSObject
-- (id)initWithCoordinates:(NSArray *)coordinates;
+- (id)initWithIdentifier:(NSString *)identifier coordinates:(NSArray *)coordinates;
 
+@property (strong, nonatomic, readonly) NSString *identifier;
 @property (strong, nonatomic, readonly) NSArray *coordinates;
 @end

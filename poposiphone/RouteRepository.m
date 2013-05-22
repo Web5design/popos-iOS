@@ -20,9 +20,14 @@
     NSString *jsonFile = [resourcePath stringByAppendingPathComponent:pathToFile];
     NSData *data = [NSData dataWithContentsOfFile:jsonFile];
     NSError *charError = nil;
-    NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&charError];
+    NSDictionary *collectionDict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&charError];
 
-    self.routes = @[[RouteRepository routeFromGeoJSON:dict]];
+    NSMutableArray *arr = [NSMutableArray array];
+    for(NSDictionary *geometry in collectionDict[@"geometries"]) {
+        [arr addObject:[RouteRepository routeFromGeoJSON:geometry]];
+    }
+    
+    self.routes = arr;
 }
 
 + (Route *)routeFromGeoJSON:(NSDictionary *)json {
@@ -32,6 +37,6 @@
         CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake([pair[1] floatValue],[pair[0] floatValue]);
         [arr addObject:[NSValue valueWithBytes:&coordinate objCType:@encode(CLLocationCoordinate2D)]];
     }
-    return [[Route alloc] initWithCoordinates:arr];
+    return [[Route alloc] initWithIdentifier:json[@"id"] coordinates:arr];
 }
 @end

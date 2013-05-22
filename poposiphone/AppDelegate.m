@@ -16,7 +16,7 @@
     [spaceRepository populateFromGeoJSONFile:@"sfpopos.geojson"];
 
     RouteRepository *routeRepository = [[RouteRepository alloc] init];
-    [routeRepository populateFromGeoJSONFile:@"sfpopos-routes.geojson"];
+    [routeRepository populateFromGeoJSONFile:@"sfpopos-routes-collection.geojson"];
     
     UIViewController *mapViewController = [[MapViewController alloc] initWithSpaceRepository:spaceRepository routeRepository:routeRepository];
     UINavigationController *mapNavController = [[UINavigationController alloc] initWithRootViewController:mapViewController];
