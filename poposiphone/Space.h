@@ -4,6 +4,7 @@
 @property (strong, nonatomic, readonly) NSString *identifier;
 @property (assign, nonatomic, readonly) CLLocationCoordinate2D coordinate;
 @property (strong, nonatomic, readonly) NSString *imageUrl;
+@property (strong, nonatomic, readonly) NSString *description;
 
-- (id)initWithIdentifier:(NSString *)identifier coordinate:(CLLocationCoordinate2D)coordinate imageUrl:(NSString *)imageUrl;
+- (id)initWithIdentifier:(NSString *)identifier coordinate:(CLLocationCoordinate2D)coordinate imageUrl:(NSString *)imageUrl description:(NSString *)description;
 @end

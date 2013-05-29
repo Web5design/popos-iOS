@@ -25,6 +25,9 @@
                                UIImage * img = [UIImage imageWithData:data];
                                [self.imageView performSelectorOnMainThread:@selector(setImage:) withObject:img waitUntilDone:YES];
                            }];
+    
+    self.descriptionLabel.text = self.space.description;
+    NSLog(@"================> %@", self.space.description);
 }
 
 - (void)didReceiveMemoryWarning

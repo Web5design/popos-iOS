@@ -95,7 +95,7 @@ NSString *kStamenAttribution = @"Map tiles by <a href=\"http://stamen.com\">Stam
 
 - (void)tapOnCalloutAccessoryControl:(UIControl *)control forAnnotation:(RMAnnotation *)annotation onMap:(RMMapView *)map
 {
-    SpaceViewController *spaceController = [[SpaceViewController alloc] initWithSpace:annotation.userInfo[@"space"]];
+    SpaceViewController *spaceController = [[SpaceViewController alloc] initWithSpace:annotation.userInfo[@"obj"]];
     [self.navigationController pushViewController:spaceController animated:YES];
 }
 

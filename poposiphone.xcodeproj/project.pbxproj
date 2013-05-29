@@ -21,7 +21,6 @@
 		DF4B9AF4174AD71B00ED4D13 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF4B9AF3174AD71B00ED4D13 /* QuartzCore.framework */; };
 		DF4B9AF6174AD72800ED4D13 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DF4B9AF5174AD72800ED4D13 /* libsqlite3.dylib */; };
 		DF4B9AF8174AD73100ED4D13 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DF4B9AF7174AD73100ED4D13 /* libz.dylib */; };
-		DF4B9AFA174AD75600ED4D13 /* MapBox.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DF4B9AF9174AD75600ED4D13 /* MapBox.bundle */; };
 		DF4B9AFD174AD9E800ED4D13 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4B9AFC174AD9E800ED4D13 /* MapViewController.m */; };
 		DF4B9B01174B38C400ED4D13 /* sfpopos.geojson in Resources */ = {isa = PBXBuildFile; fileRef = DF4B9B00174B38C400ED4D13 /* sfpopos.geojson */; };
 		DF4B9B04174B39B700ED4D13 /* Space.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4B9B03174B39B700ED4D13 /* Space.m */; };
@@ -31,6 +30,7 @@
 		DF8DB62B174BC5C600A70176 /* Route.m in Sources */ = {isa = PBXBuildFile; fileRef = DF8DB62A174BC5C600A70176 /* Route.m */; };
 		DF8DB62E174BC5D100A70176 /* RouteRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = DF8DB62D174BC5D100A70176 /* RouteRepository.m */; };
 		DFA31429174D50A50073DAA2 /* sfpopos-routes-collection.geojson in Resources */ = {isa = PBXBuildFile; fileRef = DFA31428174D50A50073DAA2 /* sfpopos-routes-collection.geojson */; };
+		DFBF2277174E769E00F1BF87 /* MapBox.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DFBF2276174E769E00F1BF87 /* MapBox.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,7 +52,6 @@
 		DF4B9AF3174AD71B00ED4D13 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		DF4B9AF5174AD72800ED4D13 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		DF4B9AF7174AD73100ED4D13 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		DF4B9AF9174AD75600ED4D13 /* MapBox.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MapBox.bundle; path = ../MapBox.framework/Versions/A/Resources/MapBox.bundle; sourceTree = "<group>"; };
 		DF4B9AFB174AD9E800ED4D13 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		DF4B9AFC174AD9E800ED4D13 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		DF4B9B00174B38C400ED4D13 /* sfpopos.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sfpopos.geojson; sourceTree = "<group>"; };
@@ -68,6 +67,7 @@
 		DF8DB62C174BC5D100A70176 /* RouteRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteRepository.h; sourceTree = "<group>"; };
 		DF8DB62D174BC5D100A70176 /* RouteRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouteRepository.m; sourceTree = "<group>"; };
 		DFA31428174D50A50073DAA2 /* sfpopos-routes-collection.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "sfpopos-routes-collection.geojson"; sourceTree = "<group>"; };
+		DFBF2276174E769E00F1BF87 /* MapBox.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MapBox.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +92,7 @@
 		DF4B9AC6174AD44A00ED4D13 = {
 			isa = PBXGroup;
 			children = (
-				DF4B9AF9174AD75600ED4D13 /* MapBox.bundle */,
+				DFBF2276174E769E00F1BF87 /* MapBox.bundle */,
 				DF4B9AF7174AD73100ED4D13 /* libz.dylib */,
 				DF4B9AF5174AD72800ED4D13 /* libsqlite3.dylib */,
 				DF4B9AF3174AD71B00ED4D13 /* QuartzCore.framework */,
@@ -216,10 +216,10 @@
 				DF4B9AE5174AD44B00ED4D13 /* Default.png in Resources */,
 				DF4B9AE7174AD44B00ED4D13 /* Default@2x.png in Resources */,
 				DF4B9AE9174AD44B00ED4D13 /* Default-568h@2x.png in Resources */,
-				DF4B9AFA174AD75600ED4D13 /* MapBox.bundle in Resources */,
 				DF4B9B01174B38C400ED4D13 /* sfpopos.geojson in Resources */,
 				DF4B9B0C174B429800ED4D13 /* SpaceViewController.xib in Resources */,
 				DFA31429174D50A50073DAA2 /* sfpopos-routes-collection.geojson in Resources */,
+				DFBF2277174E769E00F1BF87 /* MapBox.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +314,7 @@
 		DF4B9AED174AD44B00ED4D13 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Brandon Liu (WNSC27EEHU)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -323,6 +324,7 @@
 				INFOPLIST_FILE = "poposiphone/poposiphone-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1EF40452-1880-4286-9E55-7461BAA9D7F2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -330,6 +332,7 @@
 		DF4B9AEE174AD44B00ED4D13 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Brandon Liu (WNSC27EEHU)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -339,6 +342,7 @@
 				INFOPLIST_FILE = "poposiphone/poposiphone-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1EF40452-1880-4286-9E55-7461BAA9D7F2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
