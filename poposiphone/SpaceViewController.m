@@ -27,7 +27,6 @@
                            }];
     
     self.descriptionLabel.text = self.space.description;
-    NSLog(@"================> %@", self.space.description);
 }
 
 - (void)didReceiveMemoryWarning
