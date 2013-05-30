@@ -1,5 +1,6 @@
 #import "RouteDetailViewController.h"
 #import "Space.h"
+#import "SpaceViewController.h"
 
 @interface RouteDetailViewController ()
 @property (strong, nonatomic) Route *route;
@@ -36,6 +37,12 @@
     Space *space = self.route.spaces[indexPath.row];
     cell.textLabel.text = space.identifier;
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    Space *space = self.route.spaces[indexPath.row];
+    SpaceViewController *spaceView = [[SpaceViewController alloc] initWithSpace:space];
+    [self.navigationController pushViewController:spaceView animated:YES];
 }
 
 @end
