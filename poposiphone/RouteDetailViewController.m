@@ -1,10 +1,12 @@
 #import "RouteDetailViewController.h"
 #import "Space.h"
 #import "SpaceViewController.h"
+#import <MapBox/MapBox.h>
 
 @interface RouteDetailViewController ()
 @property (strong, nonatomic) Route *route;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet RMMapView *mapView;
 @end
 
 @implementation RouteDetailViewController
@@ -20,6 +22,9 @@
 - (void)viewDidLoad {
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    
+    RMMapBoxSource *onlineSource = [[RMMapBoxSource alloc] initWithMapID:@"cdawson.map-0ymh0yul"];
+    self.mapView.tileSource = onlineSource;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
