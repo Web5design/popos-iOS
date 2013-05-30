@@ -1,4 +1,5 @@
 #import "RouteListViewController.h"
+#import "RouteDetailViewController.h"
 
 @interface RouteListViewController ()
 @property (strong, nonatomic, readwrite) RouteRepository *routeRepository;
@@ -20,6 +21,12 @@
     [super viewDidLoad];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    Route *route = self.routeRepository.routes[indexPath.row];
+    RouteDetailViewController *routeDetail = [[RouteDetailViewController alloc] initWithRoute:route];
+    [self.navigationController pushViewController:routeDetail animated:YES];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
