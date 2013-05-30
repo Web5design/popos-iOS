@@ -39,4 +39,11 @@
     }
     return [[Route alloc] initWithIdentifier:[NSString stringWithFormat:@"%d", [json[@"id"] integerValue]] coordinates:arr];
 }
+
+- (void)addSpaces:(SpaceRepository *)spaceRepository {
+    for (Route *route in self.routes) {
+        route.spaces = [spaceRepository.spaces filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"routeIdentifier == %@", route.identifier]];
+    }
+}
+
 @end

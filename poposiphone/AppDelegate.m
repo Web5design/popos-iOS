@@ -27,6 +27,9 @@
     RouteRepository *routeRepository = [[RouteRepository alloc] init];
     [routeRepository populateFromGeoJSONFile:@"sfpopos-routes-collection.geojson"];
     
+    // hackety hack
+    [routeRepository addSpaces:spaceRepository];
+
     UIViewController *mapViewController = [[MapViewController alloc] initWithSpaceRepository:spaceRepository routeRepository:routeRepository];
     
     UINavigationController *mapNavController = [[UINavigationController alloc] initWithRootViewController:mapViewController];
