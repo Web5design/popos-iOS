@@ -7,6 +7,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"navigationBarAppearance.png"] forBarMetrics:UIBarMetricsDefault];
+    [[UITabBar appearance] setBackgroundImage:[UIImage imageNamed:@"tabBarAppearance.png"]];
+    [[UINavigationBar appearance] setTitleTextAttributes: @{
+                                UITextAttributeTextColor: [UIColor whiteColor],
+                         UITextAttributeTextShadowOffset: [NSValue valueWithUIOffset:UIOffsetMake(0.0f, 1.0f)],
+                                     UITextAttributeFont: [UIFont fontWithName:@"Futura-CondensedMedium" size:20.0f]
+     }];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     [self.window makeKeyAndVisible];
 
@@ -20,15 +28,17 @@
     [routeRepository populateFromGeoJSONFile:@"sfpopos-routes-collection.geojson"];
     
     UIViewController *mapViewController = [[MapViewController alloc] initWithSpaceRepository:spaceRepository routeRepository:routeRepository];
+    
     UINavigationController *mapNavController = [[UINavigationController alloc] initWithRootViewController:mapViewController];
-    mapNavController.title = @"Map";
 
     UIViewController *routeListViewController = [[RouteListViewController alloc] initWithRouteRepository:routeRepository];
+    routeListViewController.title = @"PLANNED ROUTES";
+    
     UINavigationController *routeNavController = [[UINavigationController alloc] initWithRootViewController:routeListViewController];
-    routeNavController.title = @"Paths";
     
     tabBarController.viewControllers = @[mapNavController, routeNavController];
-
+    [tabBarController.tabBar.items[0] setTitle:@""];
+    [tabBarController.tabBar.items[1] setTitle:@""];
     return YES;
 }
 

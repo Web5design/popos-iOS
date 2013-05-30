@@ -16,6 +16,8 @@
     if (self) {
         self.spaceRepository = spaceRepository;
         self.routeRepository = routeRepository;
+        self.title = @"MAP";
+        //self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"" image:nil tag:0];
     }
     return self;
 }
@@ -39,44 +41,54 @@
         [mapView addAnnotation:annotation];
     }
     
-    for (Route *route in self.routeRepository.routes) {
-        CLLocationCoordinate2D firstCoord;
-        [route.coordinates[0] getValue:&firstCoord];
-        RMAnnotation *annotation = [RMAnnotation annotationWithMapView:mapView coordinate:firstCoord andTitle:@"Route"];
-        annotation.userInfo = @{@"type":@"route",@"obj":route};
-        [mapView addAnnotation:annotation];
-    }
+//    for (Route *route in self.routeRepository.routes) {
+//        CLLocationCoordinate2D firstCoord;
+//        [route.coordinates[0] getValue:&firstCoord];
+//        RMAnnotation *annotation = [RMAnnotation annotationWithMapView:mapView coordinate:firstCoord andTitle:@"Route"];
+//        annotation.userInfo = @{@"type":@"route",@"obj":route};
+//        [mapView addAnnotation:annotation];
+//    }
 }
 
 - (RMMapLayer *)mapView:(RMMapView *)mapView layerForAnnotation:(RMAnnotation *)annotation
 {
     if ([annotation.userInfo[@"type"] isEqualToString:@"space"]) {
-        RMMarker *marker = [[RMMarker alloc] initWithMapBoxMarkerImage];
+        RMMarker *marker = [[RMMarker alloc] initWithUIImage:[UIImage imageNamed:@"Marker.png"]];
         marker.canShowCallout = YES;
         UIButton *theButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
         marker.rightCalloutAccessoryView = theButton;
         
         return marker;
-    } else {
-        // it's a Route
-        Route *route = (Route *)annotation.userInfo[@"obj"];
-        RMShape *routeShape = [[RMShape alloc] initWithView:mapView];
-        [routeShape setLineColor:[UIColor redColor]];
-        [routeShape setLineWidth:5.0];
-        BOOL moveTo = YES;
-        for (NSValue *coordValue in route.coordinates) {
-            CLLocationCoordinate2D coord;
-            [coordValue getValue:&coord];
-            if (moveTo) {
-                [routeShape moveToCoordinate:coord];
-            } else {
-                [routeShape addLineToCoordinate:coord];
-            }
-            
-            moveTo = NO;
-        }
-        return routeShape;
     }
+    
+//    else {
+//        // it's a Route
+//        Route *route = (Route *)annotation.userInfo[@"obj"];
+//        RMShape *routeShape = [[RMShape alloc] initWithView:mapView];
+//        [routeShape setLineColor:[UIColor redColor]];
+//        [routeShape setLineWidth:5.0];
+//        BOOL moveTo = YES;
+//        for (NSValue *coordValue in route.coordinates) {
+//            CLLocationCoordinate2D coord;
+//            [coordValue getValue:&coord];
+//            if (moveTo) {
+//                [routeShape moveToCoordinate:coord];
+//            } else {
+//                [routeShape addLineToCoordinate:coord];
+//            }
+//            
+//            moveTo = NO;
+//        }
+//        return routeShape;
+//    }
+}
+
+- (void)mapView:(RMMapView *)mapView didSelectAnnotation:(RMAnnotation *)annotation {
+    [((RMMarker *)annotation.layer) replaceUIImage:[UIImage imageNamed:@"Marker_highlight.png"]];
+}
+
+- (void)mapView:(RMMapView *)mapView didDeselectAnnotation:(RMAnnotation *)annotation {
+    [((RMMarker *)annotation.layer) replaceUIImage:[UIImage imageNamed:@"Marker.png"]];
 }
 
 - (void)tapOnCalloutAccessoryControl:(UIControl *)control forAnnotation:(RMAnnotation *)annotation onMap:(RMMapView *)map
