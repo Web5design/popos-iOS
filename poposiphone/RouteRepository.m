@@ -37,6 +37,6 @@
         CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake([pair[1] floatValue],[pair[0] floatValue]);
         [arr addObject:[NSValue valueWithBytes:&coordinate objCType:@encode(CLLocationCoordinate2D)]];
     }
-    return [[Route alloc] initWithIdentifier:json[@"id"] coordinates:arr];
+    return [[Route alloc] initWithIdentifier:[NSString stringWithFormat:@"%d", [json[@"id"] integerValue]] coordinates:arr];
 }
 @end
