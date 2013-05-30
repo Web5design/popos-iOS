@@ -11,8 +11,6 @@
 
 @implementation MapViewController
 
-NSString *kStamenAttribution = @"Map tiles by <a href=\"http://stamen.com\">Stamen Design</a>, under <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a>. Data by <a href=\"http://openstreetmap.org\">OpenStreetMap</a>, under <a href=\"http://creativecommons.org/licenses/by-sa/3.0\">CC BY SA</a>.";
-
 - (id)initWithSpaceRepository:(SpaceRepository *)spaceRepository routeRepository:(RouteRepository *)routeRepository {
     self = [super init];
     if (self) {
@@ -25,22 +23,10 @@ NSString *kStamenAttribution = @"Map tiles by <a href=\"http://stamen.com\">Stam
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    NSDictionary *tileJsonDict = @{ @"tilejson": @"2.0.0",
-                                    @"tiles": @[@"http://tile.stamen.com/watercolor/{z}/{x}/{y}.jpg"],
-                                    @"minzoom":@(1),
-                                    @"maxzoom":@(16),
-                                    @"attribution":kStamenAttribution};
-    NSError *error;
-    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:tileJsonDict
-                                            options:NSJSONWritingPrettyPrinted
-                                            error:&error];
-    NSString *tileJSON = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
 
-    RMMapBoxSource *onlineSource = [[RMMapBoxSource alloc] initWithTileJSON:tileJSON];
+    RMMapBoxSource *onlineSource = [[RMMapBoxSource alloc] initWithMapID:@"cdawson.map-0ymh0yul"];
     RMMapView *mapView = [[RMMapView alloc] initWithFrame:self.view.bounds andTilesource:onlineSource];
     mapView.delegate = self;
-    
     mapView.showLogoBug = NO;
     mapView.zoom = 17;
     mapView.centerCoordinate = CLLocationCoordinate2DMake(37.7920,-122.399);
