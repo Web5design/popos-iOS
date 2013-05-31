@@ -29,12 +29,11 @@
     self.mapView.draggingEnabled = NO;
     
     
-//    for (Space *space in self.spaceRepository.spaces) {
-//        RMAnnotation *annotation = [RMAnnotation annotationWithMapView:mapView coordinate:space.coordinate andTitle:space.identifier];
-//        annotation.userInfo = @{@"type":@"space",@"obj":space};
-//        [mapView addAnnotation:annotation];
-//    }
-//    
+    for (Space *space in self.route.spaces) {
+        RMAnnotation *annotation = [RMAnnotation annotationWithMapView:self.mapView coordinate:space.coordinate andTitle:space.identifier];
+        annotation.userInfo = @{@"type":@"space",@"obj":space};
+        [self.mapView addAnnotation:annotation];
+    }
 
     CLLocationCoordinate2D firstCoord;
     [self.route.coordinates[0] getValue:&firstCoord];
@@ -91,6 +90,13 @@
             moveTo = NO;
         }
         return routeShape;
+    } else if ([annotation.userInfo[@"type"] isEqualToString:@"space"]) {
+        RMMarker *marker = [[RMMarker alloc] initWithUIImage:[UIImage imageNamed:@"Marker.png"]];
+        marker.canShowCallout = YES;
+        UIButton *theButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+        marker.rightCalloutAccessoryView = theButton;
+        
+        return marker;
     }
 }
 

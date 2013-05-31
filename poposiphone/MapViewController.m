@@ -39,14 +39,6 @@
         annotation.userInfo = @{@"type":@"space",@"obj":space};
         [mapView addAnnotation:annotation];
     }
-    
-//    for (Route *route in self.routeRepository.routes) {
-//        CLLocationCoordinate2D firstCoord;
-//        [route.coordinates[0] getValue:&firstCoord];
-//        RMAnnotation *annotation = [RMAnnotation annotationWithMapView:mapView coordinate:firstCoord andTitle:@"Route"];
-//        annotation.userInfo = @{@"type":@"route",@"obj":route};
-//        [mapView addAnnotation:annotation];
-//    }
 }
 
 - (RMMapLayer *)mapView:(RMMapView *)mapView layerForAnnotation:(RMAnnotation *)annotation
@@ -59,27 +51,6 @@
         
         return marker;
     }
-    
-//    else {
-//        // it's a Route
-//        Route *route = (Route *)annotation.userInfo[@"obj"];
-//        RMShape *routeShape = [[RMShape alloc] initWithView:mapView];
-//        [routeShape setLineColor:[UIColor redColor]];
-//        [routeShape setLineWidth:5.0];
-//        BOOL moveTo = YES;
-//        for (NSValue *coordValue in route.coordinates) {
-//            CLLocationCoordinate2D coord;
-//            [coordValue getValue:&coord];
-//            if (moveTo) {
-//                [routeShape moveToCoordinate:coord];
-//            } else {
-//                [routeShape addLineToCoordinate:coord];
-//            }
-//            
-//            moveTo = NO;
-//        }
-//        return routeShape;
-//    }
 }
 
 - (void)mapView:(RMMapView *)mapView didSelectAnnotation:(RMAnnotation *)annotation {
