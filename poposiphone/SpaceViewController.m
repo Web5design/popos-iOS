@@ -10,6 +10,7 @@
     self = [super init];
     if (self) {
         self.space = space;
+        self.title = self.space.identifier;
     }
     return self;
 }

@@ -106,12 +106,7 @@
         }
         return routeShape;
     } else if ([annotation.userInfo[@"type"] isEqualToString:@"space"]) {
-        RMMarker *marker = [[RMMarker alloc] initWithUIImage:[UIImage imageNamed:@"Marker.png"]];
-        marker.canShowCallout = YES;
-        UIButton *theButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
-        marker.rightCalloutAccessoryView = theButton;
-        
-        return marker;
+        return [[RMMarker alloc] initWithUIImage:[UIImage imageNamed:@"Marker.png"]];
     }
 }
 
