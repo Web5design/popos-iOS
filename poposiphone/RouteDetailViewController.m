@@ -26,11 +26,9 @@
     self.mapView.tileSource = onlineSource;
     self.mapView.delegate = self;
     self.mapView.showLogoBug = NO;
-    self.mapView.draggingEnabled = NO;
     CLLocationCoordinate2D southwest = CLLocationCoordinate2DMake(37.688, -122.5447);
     CLLocationCoordinate2D northeast = CLLocationCoordinate2DMake(37.827, -122.3531);
     [self.mapView setConstraintsSouthWest:southwest northEast:northeast];
-    
     
     for (Space *space in self.route.spaces) {
         RMAnnotation *annotation = [RMAnnotation annotationWithMapView:self.mapView coordinate:space.coordinate andTitle:space.identifier];
@@ -43,7 +41,11 @@
     RMAnnotation *annotation = [RMAnnotation annotationWithMapView:self.mapView coordinate:firstCoord andTitle:@"Route"];
     annotation.userInfo = @{@"type":@"route",@"obj":self.route};
     [self.mapView addAnnotation:annotation];
-    
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    CLLocationCoordinate2D firstCoord;
+    [self.route.coordinates[0] getValue:&firstCoord];
     self.mapView.centerCoordinate = firstCoord;
 }
 
