@@ -30,6 +30,8 @@
 		DF3FECF1175883DC002C48F2 /* sfpopos-routes-collection.geojson in Resources */ = {isa = PBXBuildFile; fileRef = DFA31428174D50A50073DAA2 /* sfpopos-routes-collection.geojson */; };
 		DF3FECF217588472002C48F2 /* RouteRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = DF8DB62D174BC5D100A70176 /* RouteRepository.m */; };
 		DF3FECF317588475002C48F2 /* Route.m in Sources */ = {isa = PBXBuildFile; fileRef = DF8DB62A174BC5C600A70176 /* Route.m */; };
+		DF3FECF91759228C002C48F2 /* CellCircle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF3FECF81759228C002C48F2 /* CellCircle@2x.png */; };
+		DF3FECFA1759228C002C48F2 /* CellCircle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF3FECF81759228C002C48F2 /* CellCircle@2x.png */; };
 		DF4B9AD3174AD44A00ED4D13 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF4B9AD2174AD44A00ED4D13 /* UIKit.framework */; };
 		DF4B9AD5174AD44A00ED4D13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF4B9AD4174AD44A00ED4D13 /* Foundation.framework */; };
 		DF4B9AD7174AD44B00ED4D13 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF4B9AD6174AD44A00ED4D13 /* CoreGraphics.framework */; };
@@ -73,6 +75,7 @@
 		DF3FECE117587EF7002C48F2 /* navigationBarAppearance@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigationBarAppearance@2x.png"; sourceTree = "<group>"; };
 		DF3FECE217587EF7002C48F2 /* tabBarAppearance@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabBarAppearance@2x.png"; sourceTree = "<group>"; };
 		DF3FECEB175880B5002C48F2 /* SpaceRepositorySpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SpaceRepositorySpec.mm; sourceTree = "<group>"; };
+		DF3FECF81759228C002C48F2 /* CellCircle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CellCircle@2x.png"; sourceTree = "<group>"; };
 		DF4B9ACF174AD44A00ED4D13 /* poposiphone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = poposiphone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF4B9AD2174AD44A00ED4D13 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DF4B9AD4174AD44A00ED4D13 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -206,6 +209,7 @@
 		DF3FECDE17587EF7002C48F2 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				DF3FECF81759228C002C48F2 /* CellCircle@2x.png */,
 				DF3FECDF17587EF7002C48F2 /* Marker@2x.png */,
 				DF3FECE017587EF7002C48F2 /* Marker_highlight@2x.png */,
 				DF3FECE117587EF7002C48F2 /* navigationBarAppearance@2x.png */,
@@ -352,6 +356,7 @@
 				DF3FECEA17587EF7002C48F2 /* tabBarAppearance@2x.png in Resources */,
 				DF3FECF0175883D9002C48F2 /* sfpopos.geojson in Resources */,
 				DF3FECF1175883DC002C48F2 /* sfpopos-routes-collection.geojson in Resources */,
+				DF3FECFA1759228C002C48F2 /* CellCircle@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +378,7 @@
 				DF3FECE517587EF7002C48F2 /* Marker_highlight@2x.png in Resources */,
 				DF3FECE717587EF7002C48F2 /* navigationBarAppearance@2x.png in Resources */,
 				DF3FECE917587EF7002C48F2 /* tabBarAppearance@2x.png in Resources */,
+				DF3FECF91759228C002C48F2 /* CellCircle@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,6 +583,7 @@
 				DF3FECDA17587DB6002C48F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DF4B9ACA174AD44A00ED4D13 /* Build configuration list for PBXProject "poposiphone" */ = {
 			isa = XCConfigurationList;

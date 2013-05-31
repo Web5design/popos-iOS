@@ -33,6 +33,10 @@
     return [self.routeRepository.routes count];
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 50;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"routeCell"];
 
@@ -41,8 +45,19 @@
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     
+    [cell.imageView setImage:[UIImage imageNamed:@"CellCircle.png"]];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(12, 5, 20, 20)];
+    label.font = [UIFont fontWithName:@"Futura-CondensedMedium" size:14.0];
+    label.textColor = [UIColor colorWithWhite:0.25 alpha:1.0];
+    label.backgroundColor = [UIColor clearColor];
+    label.text = [NSString stringWithFormat:@"%d", indexPath.row+1];
+    [cell.imageView addSubview:label];
+
     Route *route = self.routeRepository.routes[indexPath.row];    
-    cell.textLabel.text = route.identifier;
+    cell.textLabel.text = [NSString stringWithFormat:@"%@ STREET TO FAKE STREET", route.identifier];
+    cell.textLabel.font = [UIFont fontWithName:@"Futura-CondensedMedium" size:18.0];
+    cell.detailTextLabel.text = @"Distance: 1.0 Miles";
+    cell.detailTextLabel.font = [UIFont fontWithName:@"GillSans-Light" size:12.0];
     return cell;
 }
 
