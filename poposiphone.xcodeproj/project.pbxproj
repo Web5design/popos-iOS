@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF0506C0175935D10050AFF9 /* cellArrowButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF0506BF175935D10050AFF9 /* cellArrowButton@2x.png */; };
 		DF3FECC917587DB5002C48F2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF4B9AD2174AD44A00ED4D13 /* UIKit.framework */; };
 		DF3FECCA17587DB5002C48F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF4B9AD4174AD44A00ED4D13 /* Foundation.framework */; };
 		DF3FECCB17587DB5002C48F2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF4B9AD6174AD44A00ED4D13 /* CoreGraphics.framework */; };
@@ -63,6 +64,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DF0506BF175935D10050AFF9 /* cellArrowButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cellArrowButton@2x.png"; sourceTree = "<group>"; };
 		DF3FECC817587DB5002C48F2 /* Specs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Specs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF3FECCE17587DB5002C48F2 /* Specs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Specs-Info.plist"; sourceTree = "<group>"; };
 		DF3FECD017587DB5002C48F2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 		DF3FECDE17587EF7002C48F2 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				DF0506BF175935D10050AFF9 /* cellArrowButton@2x.png */,
 				DF3FECF81759228C002C48F2 /* CellCircle@2x.png */,
 				DF3FECDF17587EF7002C48F2 /* Marker@2x.png */,
 				DF3FECE017587EF7002C48F2 /* Marker_highlight@2x.png */,
@@ -379,6 +382,7 @@
 				DF3FECE717587EF7002C48F2 /* navigationBarAppearance@2x.png in Resources */,
 				DF3FECE917587EF7002C48F2 /* tabBarAppearance@2x.png in Resources */,
 				DF3FECF91759228C002C48F2 /* CellCircle@2x.png in Resources */,
+				DF0506C0175935D10050AFF9 /* cellArrowButton@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

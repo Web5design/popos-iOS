@@ -58,13 +58,21 @@
     
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"spaceCell"];
-        cell.selectionStyle = UITableViewCellSelectionStyleNone;
         UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(12, 5, 20, 20)];
         label.font = [UIFont fontWithName:@"Futura-CondensedMedium" size:14.0];
         label.textColor = [UIColor colorWithWhite:0.25 alpha:1.0];
         label.backgroundColor = [UIColor clearColor];
         [cell.imageView addSubview:label];
         cell.textLabel.font = [UIFont fontWithName:@"Futura-CondensedMedium" size:18.0];
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+        UIImage *image = [UIImage imageNamed:@"cellArrowButton.png"];
+        CGRect frame = CGRectMake(0.0, 0.0, image.size.width, image.size.height);
+        button.frame = frame;
+        [button addTarget:self action:@selector(accessoryTapped:event:)  forControlEvents:UIControlEventTouchUpInside];
+        [button setBackgroundImage:image forState:UIControlStateNormal];
+        
+        button.backgroundColor = [UIColor clearColor];
+        cell.accessoryView = button;
     }
     
     Space *space = self.route.spaces[indexPath.row];
@@ -78,8 +86,26 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     Space *space = self.route.spaces[indexPath.row];
+    self.mapView.centerCoordinate = space.coordinate;
+}
+
+- (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath {
+    Space *space = self.route.spaces[indexPath.row];
     SpaceViewController *spaceView = [[SpaceViewController alloc] initWithSpace:space];
     [self.navigationController pushViewController:spaceView animated:YES];
+}
+
+- (void)accessoryTapped:(id)sender event:(id)event
+{
+    NSSet *touches = [event allTouches];
+    UITouch *touch = [touches anyObject];
+    CGPoint currentTouchPosition = [touch locationInView:self.tableView];
+    NSIndexPath *indexPath = [self.tableView indexPathForRowAtPoint: currentTouchPosition];
+    
+    if (indexPath != nil)
+    {
+        [self tableView: self.tableView accessoryButtonTappedForRowWithIndexPath: indexPath];
+    }
 }
 
 - (RMMapLayer *)mapView:(RMMapView *)mapView layerForAnnotation:(RMAnnotation *)annotation
