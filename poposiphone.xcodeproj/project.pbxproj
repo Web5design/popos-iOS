@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF3FECC917587DB5002C48F2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF4B9AD2174AD44A00ED4D13 /* UIKit.framework */; };
+		DF3FECCA17587DB5002C48F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF4B9AD4174AD44A00ED4D13 /* Foundation.framework */; };
+		DF3FECCB17587DB5002C48F2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF4B9AD6174AD44A00ED4D13 /* CoreGraphics.framework */; };
+		DF3FECD117587DB5002C48F2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF3FECCF17587DB5002C48F2 /* InfoPlist.strings */; };
+		DF3FECD317587DB5002C48F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3FECD217587DB5002C48F2 /* main.m */; };
+		DF3FECD617587DB6002C48F2 /* Cedar-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF3FECD517587DB6002C48F2 /* Cedar-iOS.framework */; };
+		DF3FECD817587DB6002C48F2 /* ExampleSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF3FECD717587DB6002C48F2 /* ExampleSpec.mm */; };
 		DF4B9AD3174AD44A00ED4D13 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF4B9AD2174AD44A00ED4D13 /* UIKit.framework */; };
 		DF4B9AD5174AD44A00ED4D13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF4B9AD4174AD44A00ED4D13 /* Foundation.framework */; };
 		DF4B9AD7174AD44B00ED4D13 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF4B9AD6174AD44A00ED4D13 /* CoreGraphics.framework */; };
@@ -42,6 +49,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DF3FECC817587DB5002C48F2 /* Specs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Specs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF3FECCE17587DB5002C48F2 /* Specs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Specs-Info.plist"; sourceTree = "<group>"; };
+		DF3FECD017587DB5002C48F2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DF3FECD217587DB5002C48F2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DF3FECD417587DB5002C48F2 /* Specs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Specs-Prefix.pch"; sourceTree = "<group>"; };
+		DF3FECD517587DB6002C48F2 /* Cedar-iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Cedar-iOS.framework"; path = "Frameworks/Cedar-iOS.framework"; sourceTree = "<group>"; };
+		DF3FECD717587DB6002C48F2 /* ExampleSpec.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ExampleSpec.mm; sourceTree = "<group>"; };
 		DF4B9ACF174AD44A00ED4D13 /* poposiphone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = poposiphone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF4B9AD2174AD44A00ED4D13 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DF4B9AD4174AD44A00ED4D13 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -89,6 +103,17 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		DF3FECC517587DB5002C48F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF3FECC917587DB5002C48F2 /* UIKit.framework in Frameworks */,
+				DF3FECCA17587DB5002C48F2 /* Foundation.framework in Frameworks */,
+				DF3FECCB17587DB5002C48F2 /* CoreGraphics.framework in Frameworks */,
+				DF3FECD617587DB6002C48F2 /* Cedar-iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DF4B9ACC174AD44A00ED4D13 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -107,6 +132,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DF3FECCC17587DB5002C48F2 /* Specs */ = {
+			isa = PBXGroup;
+			children = (
+				DF3FECD517587DB6002C48F2 /* Cedar-iOS.framework */,
+				DF3FECD717587DB6002C48F2 /* ExampleSpec.mm */,
+				DF3FECCD17587DB5002C48F2 /* Supporting Files */,
+			);
+			path = Specs;
+			sourceTree = "<group>";
+		};
+		DF3FECCD17587DB5002C48F2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF3FECCE17587DB5002C48F2 /* Specs-Info.plist */,
+				DF3FECCF17587DB5002C48F2 /* InfoPlist.strings */,
+				DF3FECD217587DB5002C48F2 /* main.m */,
+				DF3FECD417587DB5002C48F2 /* Specs-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DF3FECDC17587DEE002C48F2 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				DF8DB629174BC5C600A70176 /* Route.h */,
+				DF8DB62A174BC5C600A70176 /* Route.m */,
+				DF8DB62C174BC5D100A70176 /* RouteRepository.h */,
+				DF8DB62D174BC5D100A70176 /* RouteRepository.m */,
+				DF4B9B02174B39B700ED4D13 /* Space.h */,
+				DF4B9B03174B39B700ED4D13 /* Space.m */,
+				DF4B9B05174B3A0500ED4D13 /* SpaceRepository.h */,
+				DF4B9B06174B3A0500ED4D13 /* SpaceRepository.m */,
+			);
+			name = Domain;
+			sourceTree = "<group>";
+		};
+		DF3FECDD17587DF3002C48F2 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				DF4B9AE1174AD44B00ED4D13 /* AppDelegate.h */,
+				DF4B9AE2174AD44B00ED4D13 /* AppDelegate.m */,
+				DF4B9AFB174AD9E800ED4D13 /* MapViewController.h */,
+				DF4B9AFC174AD9E800ED4D13 /* MapViewController.m */,
+				DF4B9B08174B429800ED4D13 /* SpaceViewController.h */,
+				DF4B9B09174B429800ED4D13 /* SpaceViewController.m */,
+				DF4B9B0A174B429800ED4D13 /* SpaceViewController.xib */,
+				DF52EF711756BCE800211DAC /* RouteListViewController.h */,
+				DF52EF721756BCE800211DAC /* RouteListViewController.m */,
+				DF52EF731756BCE800211DAC /* RouteListViewController.xib */,
+				DF8E383D17580A2C009DF29B /* RouteDetailViewController.h */,
+				DF8E383E17580A2C009DF29B /* RouteDetailViewController.m */,
+				DF8E383F17580A2C009DF29B /* RouteDetailViewController.xib */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
 		DF4B9AC6174AD44A00ED4D13 = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +198,7 @@
 				DF4B9AF3174AD71B00ED4D13 /* QuartzCore.framework */,
 				DF4B9AF1174AD71300ED4D13 /* CoreLocation.framework */,
 				DF4B9AD8174AD44B00ED4D13 /* poposiphone */,
+				DF3FECCC17587DB5002C48F2 /* Specs */,
 				DF4B9AD1174AD44A00ED4D13 /* Frameworks */,
 				DF4B9AD0174AD44A00ED4D13 /* Products */,
 			);
@@ -126,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				DF4B9ACF174AD44A00ED4D13 /* poposiphone.app */,
+				DF3FECC817587DB5002C48F2 /* Specs.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -144,28 +227,9 @@
 		DF4B9AD8174AD44B00ED4D13 /* poposiphone */ = {
 			isa = PBXGroup;
 			children = (
-				DF4B9AE1174AD44B00ED4D13 /* AppDelegate.h */,
-				DF4B9AE2174AD44B00ED4D13 /* AppDelegate.m */,
+				DF3FECDD17587DF3002C48F2 /* UI */,
+				DF3FECDC17587DEE002C48F2 /* Domain */,
 				DF4B9AD9174AD44B00ED4D13 /* Supporting Files */,
-				DF4B9AFB174AD9E800ED4D13 /* MapViewController.h */,
-				DF4B9AFC174AD9E800ED4D13 /* MapViewController.m */,
-				DF4B9B02174B39B700ED4D13 /* Space.h */,
-				DF4B9B03174B39B700ED4D13 /* Space.m */,
-				DF4B9B05174B3A0500ED4D13 /* SpaceRepository.h */,
-				DF4B9B06174B3A0500ED4D13 /* SpaceRepository.m */,
-				DF4B9B08174B429800ED4D13 /* SpaceViewController.h */,
-				DF4B9B09174B429800ED4D13 /* SpaceViewController.m */,
-				DF4B9B0A174B429800ED4D13 /* SpaceViewController.xib */,
-				DF8DB629174BC5C600A70176 /* Route.h */,
-				DF8DB62A174BC5C600A70176 /* Route.m */,
-				DF8DB62C174BC5D100A70176 /* RouteRepository.h */,
-				DF8DB62D174BC5D100A70176 /* RouteRepository.m */,
-				DF52EF711756BCE800211DAC /* RouteListViewController.h */,
-				DF52EF721756BCE800211DAC /* RouteListViewController.m */,
-				DF52EF731756BCE800211DAC /* RouteListViewController.xib */,
-				DF8E383D17580A2C009DF29B /* RouteDetailViewController.h */,
-				DF8E383E17580A2C009DF29B /* RouteDetailViewController.m */,
-				DF8E383F17580A2C009DF29B /* RouteDetailViewController.xib */,
 			);
 			path = poposiphone;
 			sourceTree = "<group>";
@@ -200,6 +264,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		DF3FECC717587DB5002C48F2 /* Specs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF3FECDB17587DB6002C48F2 /* Build configuration list for PBXNativeTarget "Specs" */;
+			buildPhases = (
+				DF3FECC417587DB5002C48F2 /* Sources */,
+				DF3FECC517587DB5002C48F2 /* Frameworks */,
+				DF3FECC617587DB5002C48F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Specs;
+			productName = Specs;
+			productReference = DF3FECC817587DB5002C48F2 /* Specs.app */;
+			productType = "com.apple.product-type.application";
+		};
 		DF4B9ACE174AD44A00ED4D13 /* poposiphone */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DF4B9AEC174AD44B00ED4D13 /* Build configuration list for PBXNativeTarget "poposiphone" */;
@@ -239,11 +320,20 @@
 			projectRoot = "";
 			targets = (
 				DF4B9ACE174AD44A00ED4D13 /* poposiphone */,
+				DF3FECC717587DB5002C48F2 /* Specs */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		DF3FECC617587DB5002C48F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF3FECD117587DB5002C48F2 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DF4B9ACD174AD44A00ED4D13 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -268,6 +358,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		DF3FECC417587DB5002C48F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF3FECD317587DB5002C48F2 /* main.m in Sources */,
+				DF3FECD817587DB6002C48F2 /* ExampleSpec.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DF4B9ACB174AD44A00ED4D13 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -288,6 +387,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		DF3FECCF17587DB5002C48F2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF3FECD017587DB5002C48F2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		DF4B9ADB174AD44B00ED4D13 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -299,6 +406,49 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		DF3FECD917587DB6002C48F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Specs/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Specs/Specs-Prefix.pch";
+				INFOPLIST_FILE = "Specs/Specs-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-lstdc++",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DF3FECDA17587DB6002C48F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Specs/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Specs/Specs-Prefix.pch";
+				INFOPLIST_FILE = "Specs/Specs-Info.plist";
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-lstdc++",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		DF4B9AEA174AD44B00ED4D13 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -394,6 +544,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DF3FECDB17587DB6002C48F2 /* Build configuration list for PBXNativeTarget "Specs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF3FECD917587DB6002C48F2 /* Debug */,
+				DF3FECDA17587DB6002C48F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		DF4B9ACA174AD44A00ED4D13 /* Build configuration list for PBXProject "poposiphone" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
