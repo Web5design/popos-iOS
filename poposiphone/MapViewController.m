@@ -17,7 +17,6 @@
         self.spaceRepository = spaceRepository;
         self.routeRepository = routeRepository;
         self.title = @"MAP";
-        //self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"" image:nil tag:0];
     }
     return self;
 }
