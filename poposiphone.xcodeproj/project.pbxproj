@@ -13,7 +13,7 @@
 		DF3FECD117587DB5002C48F2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF3FECCF17587DB5002C48F2 /* InfoPlist.strings */; };
 		DF3FECD317587DB5002C48F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3FECD217587DB5002C48F2 /* main.m */; };
 		DF3FECD617587DB6002C48F2 /* Cedar-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF3FECD517587DB6002C48F2 /* Cedar-iOS.framework */; };
-		DF3FECD817587DB6002C48F2 /* ExampleSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF3FECD717587DB6002C48F2 /* ExampleSpec.mm */; };
+		DF3FECD817587DB6002C48F2 /* RouteRepositorySpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF3FECD717587DB6002C48F2 /* RouteRepositorySpec.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		DF3FECE317587EF7002C48F2 /* Marker@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF3FECDF17587EF7002C48F2 /* Marker@2x.png */; };
 		DF3FECE417587EF7002C48F2 /* Marker@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF3FECDF17587EF7002C48F2 /* Marker@2x.png */; };
 		DF3FECE517587EF7002C48F2 /* Marker_highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF3FECE017587EF7002C48F2 /* Marker_highlight@2x.png */; };
@@ -22,6 +22,14 @@
 		DF3FECE817587EF7002C48F2 /* navigationBarAppearance@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF3FECE117587EF7002C48F2 /* navigationBarAppearance@2x.png */; };
 		DF3FECE917587EF7002C48F2 /* tabBarAppearance@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF3FECE217587EF7002C48F2 /* tabBarAppearance@2x.png */; };
 		DF3FECEA17587EF7002C48F2 /* tabBarAppearance@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF3FECE217587EF7002C48F2 /* tabBarAppearance@2x.png */; };
+		DF3FECEC175880B5002C48F2 /* SpaceRepositorySpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF3FECEB175880B5002C48F2 /* SpaceRepositorySpec.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DF3FECED175882A1002C48F2 /* SpaceRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4B9B06174B3A0500ED4D13 /* SpaceRepository.m */; };
+		DF3FECEE175882B3002C48F2 /* Space.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4B9B03174B39B700ED4D13 /* Space.m */; };
+		DF3FECEF17588367002C48F2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF4B9AF1174AD71300ED4D13 /* CoreLocation.framework */; };
+		DF3FECF0175883D9002C48F2 /* sfpopos.geojson in Resources */ = {isa = PBXBuildFile; fileRef = DF4B9B00174B38C400ED4D13 /* sfpopos.geojson */; };
+		DF3FECF1175883DC002C48F2 /* sfpopos-routes-collection.geojson in Resources */ = {isa = PBXBuildFile; fileRef = DFA31428174D50A50073DAA2 /* sfpopos-routes-collection.geojson */; };
+		DF3FECF217588472002C48F2 /* RouteRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = DF8DB62D174BC5D100A70176 /* RouteRepository.m */; };
+		DF3FECF317588475002C48F2 /* Route.m in Sources */ = {isa = PBXBuildFile; fileRef = DF8DB62A174BC5C600A70176 /* Route.m */; };
 		DF4B9AD3174AD44A00ED4D13 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF4B9AD2174AD44A00ED4D13 /* UIKit.framework */; };
 		DF4B9AD5174AD44A00ED4D13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF4B9AD4174AD44A00ED4D13 /* Foundation.framework */; };
 		DF4B9AD7174AD44B00ED4D13 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF4B9AD6174AD44A00ED4D13 /* CoreGraphics.framework */; };
@@ -59,11 +67,12 @@
 		DF3FECD217587DB5002C48F2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DF3FECD417587DB5002C48F2 /* Specs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Specs-Prefix.pch"; sourceTree = "<group>"; };
 		DF3FECD517587DB6002C48F2 /* Cedar-iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Cedar-iOS.framework"; path = "Frameworks/Cedar-iOS.framework"; sourceTree = "<group>"; };
-		DF3FECD717587DB6002C48F2 /* ExampleSpec.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ExampleSpec.mm; sourceTree = "<group>"; };
+		DF3FECD717587DB6002C48F2 /* RouteRepositorySpec.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RouteRepositorySpec.mm; sourceTree = "<group>"; };
 		DF3FECDF17587EF7002C48F2 /* Marker@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Marker@2x.png"; sourceTree = "<group>"; };
 		DF3FECE017587EF7002C48F2 /* Marker_highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Marker_highlight@2x.png"; sourceTree = "<group>"; };
 		DF3FECE117587EF7002C48F2 /* navigationBarAppearance@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigationBarAppearance@2x.png"; sourceTree = "<group>"; };
 		DF3FECE217587EF7002C48F2 /* tabBarAppearance@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabBarAppearance@2x.png"; sourceTree = "<group>"; };
+		DF3FECEB175880B5002C48F2 /* SpaceRepositorySpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SpaceRepositorySpec.mm; sourceTree = "<group>"; };
 		DF4B9ACF174AD44A00ED4D13 /* poposiphone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = poposiphone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF4B9AD2174AD44A00ED4D13 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DF4B9AD4174AD44A00ED4D13 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -111,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF3FECEF17588367002C48F2 /* CoreLocation.framework in Frameworks */,
 				DF3FECC917587DB5002C48F2 /* UIKit.framework in Frameworks */,
 				DF3FECCA17587DB5002C48F2 /* Foundation.framework in Frameworks */,
 				DF3FECCB17587DB5002C48F2 /* CoreGraphics.framework in Frameworks */,
@@ -140,7 +150,8 @@
 			isa = PBXGroup;
 			children = (
 				DF3FECD517587DB6002C48F2 /* Cedar-iOS.framework */,
-				DF3FECD717587DB6002C48F2 /* ExampleSpec.mm */,
+				DF3FECD717587DB6002C48F2 /* RouteRepositorySpec.mm */,
+				DF3FECEB175880B5002C48F2 /* SpaceRepositorySpec.mm */,
 				DF3FECCD17587DB5002C48F2 /* Supporting Files */,
 			);
 			path = Specs;
@@ -339,6 +350,8 @@
 				DF3FECE617587EF7002C48F2 /* Marker_highlight@2x.png in Resources */,
 				DF3FECE817587EF7002C48F2 /* navigationBarAppearance@2x.png in Resources */,
 				DF3FECEA17587EF7002C48F2 /* tabBarAppearance@2x.png in Resources */,
+				DF3FECF0175883D9002C48F2 /* sfpopos.geojson in Resources */,
+				DF3FECF1175883DC002C48F2 /* sfpopos-routes-collection.geojson in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,7 +384,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF3FECD317587DB5002C48F2 /* main.m in Sources */,
-				DF3FECD817587DB6002C48F2 /* ExampleSpec.mm in Sources */,
+				DF3FECD817587DB6002C48F2 /* RouteRepositorySpec.mm in Sources */,
+				DF3FECEC175880B5002C48F2 /* SpaceRepositorySpec.mm in Sources */,
+				DF3FECED175882A1002C48F2 /* SpaceRepository.m in Sources */,
+				DF3FECEE175882B3002C48F2 /* Space.m in Sources */,
+				DF3FECF217588472002C48F2 /* RouteRepository.m in Sources */,
+				DF3FECF317588475002C48F2 /* Route.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
