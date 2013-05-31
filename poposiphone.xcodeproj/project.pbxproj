@@ -14,6 +14,14 @@
 		DF3FECD317587DB5002C48F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3FECD217587DB5002C48F2 /* main.m */; };
 		DF3FECD617587DB6002C48F2 /* Cedar-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF3FECD517587DB6002C48F2 /* Cedar-iOS.framework */; };
 		DF3FECD817587DB6002C48F2 /* ExampleSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF3FECD717587DB6002C48F2 /* ExampleSpec.mm */; };
+		DF3FECE317587EF7002C48F2 /* Marker@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF3FECDF17587EF7002C48F2 /* Marker@2x.png */; };
+		DF3FECE417587EF7002C48F2 /* Marker@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF3FECDF17587EF7002C48F2 /* Marker@2x.png */; };
+		DF3FECE517587EF7002C48F2 /* Marker_highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF3FECE017587EF7002C48F2 /* Marker_highlight@2x.png */; };
+		DF3FECE617587EF7002C48F2 /* Marker_highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF3FECE017587EF7002C48F2 /* Marker_highlight@2x.png */; };
+		DF3FECE717587EF7002C48F2 /* navigationBarAppearance@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF3FECE117587EF7002C48F2 /* navigationBarAppearance@2x.png */; };
+		DF3FECE817587EF7002C48F2 /* navigationBarAppearance@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF3FECE117587EF7002C48F2 /* navigationBarAppearance@2x.png */; };
+		DF3FECE917587EF7002C48F2 /* tabBarAppearance@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF3FECE217587EF7002C48F2 /* tabBarAppearance@2x.png */; };
+		DF3FECEA17587EF7002C48F2 /* tabBarAppearance@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF3FECE217587EF7002C48F2 /* tabBarAppearance@2x.png */; };
 		DF4B9AD3174AD44A00ED4D13 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF4B9AD2174AD44A00ED4D13 /* UIKit.framework */; };
 		DF4B9AD5174AD44A00ED4D13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF4B9AD4174AD44A00ED4D13 /* Foundation.framework */; };
 		DF4B9AD7174AD44B00ED4D13 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF4B9AD6174AD44A00ED4D13 /* CoreGraphics.framework */; };
@@ -38,10 +46,6 @@
 		DF52EF751756BCE800211DAC /* RouteListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF52EF731756BCE800211DAC /* RouteListViewController.xib */; };
 		DF8DB62B174BC5C600A70176 /* Route.m in Sources */ = {isa = PBXBuildFile; fileRef = DF8DB62A174BC5C600A70176 /* Route.m */; };
 		DF8DB62E174BC5D100A70176 /* RouteRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = DF8DB62D174BC5D100A70176 /* RouteRepository.m */; };
-		DF8E38361757F17B009DF29B /* navigationBarAppearance@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8E38351757F17B009DF29B /* navigationBarAppearance@2x.png */; };
-		DF8E38381757F307009DF29B /* tabBarAppearance@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8E38371757F307009DF29B /* tabBarAppearance@2x.png */; };
-		DF8E383B1757FA93009DF29B /* Marker_highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8E38391757FA93009DF29B /* Marker_highlight@2x.png */; };
-		DF8E383C1757FA93009DF29B /* Marker@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8E383A1757FA93009DF29B /* Marker@2x.png */; };
 		DF8E384017580A2C009DF29B /* RouteDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF8E383E17580A2C009DF29B /* RouteDetailViewController.m */; };
 		DF8E384117580A2C009DF29B /* RouteDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF8E383F17580A2C009DF29B /* RouteDetailViewController.xib */; };
 		DFA31429174D50A50073DAA2 /* sfpopos-routes-collection.geojson in Resources */ = {isa = PBXBuildFile; fileRef = DFA31428174D50A50073DAA2 /* sfpopos-routes-collection.geojson */; };
@@ -56,6 +60,10 @@
 		DF3FECD417587DB5002C48F2 /* Specs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Specs-Prefix.pch"; sourceTree = "<group>"; };
 		DF3FECD517587DB6002C48F2 /* Cedar-iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Cedar-iOS.framework"; path = "Frameworks/Cedar-iOS.framework"; sourceTree = "<group>"; };
 		DF3FECD717587DB6002C48F2 /* ExampleSpec.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ExampleSpec.mm; sourceTree = "<group>"; };
+		DF3FECDF17587EF7002C48F2 /* Marker@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Marker@2x.png"; sourceTree = "<group>"; };
+		DF3FECE017587EF7002C48F2 /* Marker_highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Marker_highlight@2x.png"; sourceTree = "<group>"; };
+		DF3FECE117587EF7002C48F2 /* navigationBarAppearance@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigationBarAppearance@2x.png"; sourceTree = "<group>"; };
+		DF3FECE217587EF7002C48F2 /* tabBarAppearance@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabBarAppearance@2x.png"; sourceTree = "<group>"; };
 		DF4B9ACF174AD44A00ED4D13 /* poposiphone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = poposiphone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF4B9AD2174AD44A00ED4D13 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DF4B9AD4174AD44A00ED4D13 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -91,10 +99,6 @@
 		DF8DB62A174BC5C600A70176 /* Route.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Route.m; sourceTree = "<group>"; };
 		DF8DB62C174BC5D100A70176 /* RouteRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteRepository.h; sourceTree = "<group>"; };
 		DF8DB62D174BC5D100A70176 /* RouteRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouteRepository.m; sourceTree = "<group>"; };
-		DF8E38351757F17B009DF29B /* navigationBarAppearance@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "navigationBarAppearance@2x.png"; path = "poposiphone/navigationBarAppearance@2x.png"; sourceTree = "<group>"; };
-		DF8E38371757F307009DF29B /* tabBarAppearance@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabBarAppearance@2x.png"; path = "poposiphone/tabBarAppearance@2x.png"; sourceTree = "<group>"; };
-		DF8E38391757FA93009DF29B /* Marker_highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Marker_highlight@2x.png"; sourceTree = "<group>"; };
-		DF8E383A1757FA93009DF29B /* Marker@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Marker@2x.png"; sourceTree = "<group>"; };
 		DF8E383D17580A2C009DF29B /* RouteDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteDetailViewController.h; sourceTree = "<group>"; };
 		DF8E383E17580A2C009DF29B /* RouteDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouteDetailViewController.m; sourceTree = "<group>"; };
 		DF8E383F17580A2C009DF29B /* RouteDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RouteDetailViewController.xib; sourceTree = "<group>"; };
@@ -188,10 +192,20 @@
 			name = UI;
 			sourceTree = "<group>";
 		};
+		DF3FECDE17587EF7002C48F2 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				DF3FECDF17587EF7002C48F2 /* Marker@2x.png */,
+				DF3FECE017587EF7002C48F2 /* Marker_highlight@2x.png */,
+				DF3FECE117587EF7002C48F2 /* navigationBarAppearance@2x.png */,
+				DF3FECE217587EF7002C48F2 /* tabBarAppearance@2x.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		DF4B9AC6174AD44A00ED4D13 = {
 			isa = PBXGroup;
 			children = (
-				DF8E38341757F163009DF29B /* Images */,
 				DFBF2276174E769E00F1BF87 /* MapBox.bundle */,
 				DF4B9AF7174AD73100ED4D13 /* libz.dylib */,
 				DF4B9AF5174AD72800ED4D13 /* libsqlite3.dylib */,
@@ -201,6 +215,7 @@
 				DF3FECCC17587DB5002C48F2 /* Specs */,
 				DF4B9AD1174AD44A00ED4D13 /* Frameworks */,
 				DF4B9AD0174AD44A00ED4D13 /* Products */,
+				DF3FECDE17587EF7002C48F2 /* Assets */,
 			);
 			sourceTree = "<group>";
 		};
@@ -248,17 +263,6 @@
 				DF4B9AE8174AD44B00ED4D13 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		DF8E38341757F163009DF29B /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				DF8E38351757F17B009DF29B /* navigationBarAppearance@2x.png */,
-				DF8E38371757F307009DF29B /* tabBarAppearance@2x.png */,
-				DF8E38391757FA93009DF29B /* Marker_highlight@2x.png */,
-				DF8E383A1757FA93009DF29B /* Marker@2x.png */,
-			);
-			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,6 +335,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF3FECD117587DB5002C48F2 /* InfoPlist.strings in Resources */,
+				DF3FECE417587EF7002C48F2 /* Marker@2x.png in Resources */,
+				DF3FECE617587EF7002C48F2 /* Marker_highlight@2x.png in Resources */,
+				DF3FECE817587EF7002C48F2 /* navigationBarAppearance@2x.png in Resources */,
+				DF3FECEA17587EF7002C48F2 /* tabBarAppearance@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,11 +355,11 @@
 				DFA31429174D50A50073DAA2 /* sfpopos-routes-collection.geojson in Resources */,
 				DFBF2277174E769E00F1BF87 /* MapBox.bundle in Resources */,
 				DF52EF751756BCE800211DAC /* RouteListViewController.xib in Resources */,
-				DF8E38361757F17B009DF29B /* navigationBarAppearance@2x.png in Resources */,
-				DF8E38381757F307009DF29B /* tabBarAppearance@2x.png in Resources */,
-				DF8E383B1757FA93009DF29B /* Marker_highlight@2x.png in Resources */,
-				DF8E383C1757FA93009DF29B /* Marker@2x.png in Resources */,
 				DF8E384117580A2C009DF29B /* RouteDetailViewController.xib in Resources */,
+				DF3FECE317587EF7002C48F2 /* Marker@2x.png in Resources */,
+				DF3FECE517587EF7002C48F2 /* Marker_highlight@2x.png in Resources */,
+				DF3FECE717587EF7002C48F2 /* navigationBarAppearance@2x.png in Resources */,
+				DF3FECE917587EF7002C48F2 /* tabBarAppearance@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
