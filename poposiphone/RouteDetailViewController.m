@@ -54,10 +54,20 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"spaceCell"];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(12, 5, 20, 20)];
+        label.font = [UIFont fontWithName:@"Futura-CondensedMedium" size:14.0];
+        label.textColor = [UIColor colorWithWhite:0.25 alpha:1.0];
+        label.backgroundColor = [UIColor clearColor];
+        [cell.imageView addSubview:label];
+        cell.textLabel.font = [UIFont fontWithName:@"Futura-CondensedMedium" size:18.0];
     }
     
     Space *space = self.route.spaces[indexPath.row];
     cell.textLabel.text = space.identifier;
+    [cell.imageView setImage:[UIImage imageNamed:@"CellCircle.png"]];
+    UILabel *label = cell.imageView.subviews[0]; // hackety hack
+    label.text = [NSString stringWithFormat:@"%d", indexPath.row+1];
+
     return cell;
 }
 
