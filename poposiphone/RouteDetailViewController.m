@@ -27,6 +27,9 @@
     self.mapView.delegate = self;
     self.mapView.showLogoBug = NO;
     self.mapView.draggingEnabled = NO;
+    CLLocationCoordinate2D southwest = CLLocationCoordinate2DMake(37.688, -122.5447);
+    CLLocationCoordinate2D northeast = CLLocationCoordinate2DMake(37.827, -122.3531);
+    [self.mapView setConstraintsSouthWest:southwest northEast:northeast];
     
     
     for (Space *space in self.route.spaces) {

@@ -32,6 +32,9 @@
     mapView.zoom = 17;
     mapView.centerCoordinate = CLLocationCoordinate2DMake(37.7920,-122.399);
     mapView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+    CLLocationCoordinate2D southwest = CLLocationCoordinate2DMake(37.688, -122.5447);
+    CLLocationCoordinate2D northeast = CLLocationCoordinate2DMake(37.827, -122.3531);
+    [mapView setConstraintsSouthWest:southwest northEast:northeast];
     [self.view addSubview:mapView];
     
     for (Space *space in self.spaceRepository.spaces) {
