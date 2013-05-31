@@ -96,9 +96,4 @@
     [self.navigationController pushViewController:spaceController animated:YES];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-}
-
 @end

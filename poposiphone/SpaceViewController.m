@@ -29,9 +29,4 @@
     self.descriptionLabel.text = self.space.description;
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-}
-
 @end
