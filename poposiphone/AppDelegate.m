@@ -14,6 +14,9 @@
                          UITextAttributeTextShadowOffset: [NSValue valueWithUIOffset:UIOffsetMake(0.0f, 1.0f)],
                                      UITextAttributeFont: [UIFont fontWithName:@"Futura-CondensedMedium" size:20.0f]
      }];
+    
+    [[UINavigationBar appearance] setBarStyle:UIBarStyleBlack];
+    [[UINavigationBar appearance] setTintColor:[UIColor colorWithRed:44/255.0 green:44/255.0 blue:56/255.0 alpha:1.0]];
     [[UITabBarItem appearance] setTitleTextAttributes:@{UITextAttributeFont:[UIFont fontWithName:@"Futura-Medium" size:12.0f]} forState:UIControlStateNormal];
         
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
@@ -35,6 +38,7 @@
     routeListViewController.title = @"PLANNED ROUTES";
     
     UINavigationController *routeNavController = [[UINavigationController alloc] initWithRootViewController:routeListViewController];
+
     
     tabBarController.viewControllers = @[mapNavController, routeNavController];
 

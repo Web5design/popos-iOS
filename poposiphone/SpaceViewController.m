@@ -2,6 +2,7 @@
 
 @interface SpaceViewController ()
 @property (strong, nonatomic) Space *space;
+@property (weak, nonatomic) IBOutlet UITextView *textView;
 @end
 
 @implementation SpaceViewController
@@ -27,7 +28,8 @@
                                [self.imageView performSelectorOnMainThread:@selector(setImage:) withObject:img waitUntilDone:YES];
                            }];
     
-    self.descriptionLabel.text = self.space.description;
+    self.textView.text = self.space.description;
+    self.textView.scrollEnabled = YES;
 }
 
 @end

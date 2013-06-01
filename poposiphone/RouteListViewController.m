@@ -21,8 +21,11 @@
     [super viewDidLoad];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    UIView *titleView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 200, 44)];
-    [titleView addSubview:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"PathMenuIcon.png"]]];
+    UIView *titleView = [[UIView alloc] initWithFrame:CGRectMake(0,0, 200, 44)];
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"PathMenuIcon.png"]];
+    imageView.frame = CGRectMake(0, 6, 48, 32);
+    [titleView addSubview:imageView];
+    
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(60,0, 100, 44)];
     label.backgroundColor = [UIColor clearColor];
     label.text = @"PLANNED ROUTES";

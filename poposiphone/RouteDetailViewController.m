@@ -66,7 +66,8 @@
         [cell.imageView addSubview:label];
         cell.textLabel.font = [UIFont fontWithName:@"Futura-CondensedMedium" size:18.0];
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-        UIImage *image = [UIImage imageNamed:@"cellArrowButton.png"];
+        button.adjustsImageWhenHighlighted = NO;
+        UIImage *image = [UIImage imageNamed:@"CellArrowButton.png"];
         CGRect frame = CGRectMake(0.0, 0.0, image.size.width, image.size.height);
         button.frame = frame;
         [button addTarget:self action:@selector(accessoryTapped:event:)  forControlEvents:UIControlEventTouchUpInside];
