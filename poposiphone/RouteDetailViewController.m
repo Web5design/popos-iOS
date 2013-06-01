@@ -74,6 +74,10 @@
         
         button.backgroundColor = [UIColor clearColor];
         cell.accessoryView = button;
+        
+        UIView *bgColorView = [[UIView alloc] init];
+        [bgColorView setBackgroundColor:[UIColor colorWithRed:100/255.0 green:196/255.0 blue:184/255.0 alpha:1.0]];
+        [cell setSelectedBackgroundView:bgColorView];
     }
     
     Space *space = self.route.spaces[indexPath.row];
