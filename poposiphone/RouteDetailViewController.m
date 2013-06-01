@@ -105,7 +105,7 @@
     
     if (indexPath != nil)
     {
-        [self tableView: self.tableView accessoryButtonTappedForRowWithIndexPath: indexPath];
+        [self tableView: self.tableView accessoryButtonTappedForRowWithIndexPath:indexPath];
     }
 }
 
@@ -115,8 +115,9 @@
         Route *route = (Route *)annotation.userInfo[@"obj"];
         RMShape *routeShape = [[RMShape alloc] initWithView:mapView];
         routeShape.scaleLineDash = NO;
-        routeShape.lineColor = [UIColor redColor];
-        routeShape.lineDashLengths = @[@(5.0)];
+        routeShape.lineColor = [UIColor colorWithRed:232.0/255 green:83.0/255 blue:85.0/255 alpha:1.0];
+        routeShape.lineDashPhase = 10.0;
+        routeShape.lineDashLengths = @[@(10.0)];
         routeShape.lineWidth = 2.0;
 
         BOOL moveTo = YES;

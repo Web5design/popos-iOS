@@ -14,7 +14,8 @@
                          UITextAttributeTextShadowOffset: [NSValue valueWithUIOffset:UIOffsetMake(0.0f, 1.0f)],
                                      UITextAttributeFont: [UIFont fontWithName:@"Futura-CondensedMedium" size:20.0f]
      }];
-    
+    [[UITabBarItem appearance] setTitleTextAttributes:@{UITextAttributeFont:[UIFont fontWithName:@"Futura-Medium" size:12.0f]} forState:UIControlStateNormal];
+        
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     [self.window makeKeyAndVisible];
 
@@ -36,8 +37,17 @@
     UINavigationController *routeNavController = [[UINavigationController alloc] initWithRootViewController:routeListViewController];
     
     tabBarController.viewControllers = @[mapNavController, routeNavController];
-    [tabBarController.tabBar.items[0] setTitle:@""];
-    [tabBarController.tabBar.items[1] setTitle:@""];
+
+    UITabBarItem *tabBarItem1 = tabBarController.tabBar.items[0];
+    tabBarController.tabBar.selectedImageTintColor = nil;
+    tabBarItem1.title = @"map";
+    
+    tabBarItem1.image = [UIImage imageNamed:@"MapMenuIcon.png"];
+
+    UITabBarItem *tabBarItem2 = tabBarController.tabBar.items[1];
+    tabBarItem2.title = @"planned routes";
+    tabBarItem2.image = [UIImage imageNamed:@"PathMenuIcon.png"];
+    
     return YES;
 }
 

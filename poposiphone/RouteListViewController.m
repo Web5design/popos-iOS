@@ -21,6 +21,17 @@
     [super viewDidLoad];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    UIView *titleView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 200, 44)];
+    [titleView addSubview:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"PathMenuIcon.png"]]];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(60,0, 100, 44)];
+    label.backgroundColor = [UIColor clearColor];
+    label.text = @"PLANNED ROUTES";
+    label.font = [UIFont fontWithName:@"Futura-CondensedMedium" size:18];
+    label.textColor = [UIColor whiteColor];
+    label.shadowColor = [UIColor blackColor];
+    label.shadowOffset = CGSizeMake(1, 1);
+    [titleView addSubview:label];
+    self.navigationItem.titleView = titleView;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
