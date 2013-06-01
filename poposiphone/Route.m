@@ -7,11 +7,12 @@
 @end
 
 @implementation Route
-- (id)initWithIdentifier:(NSString *)identifier coordinates:(NSArray *)coordinates {
+- (id)initWithIdentifier:(NSString *)identifier coordinates:(NSArray *)coordinates miles:(NSString *)miles {
     self = [super init];
     if (self) {
         self.identifier = identifier;
         self.coordinates = coordinates;
+        self.miles = miles;
     }
     return self;
 }

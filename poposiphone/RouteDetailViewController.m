@@ -14,7 +14,7 @@
     self = [super init];
     if (self) {
         self.route = route;
-        self.title = self.route.identifier;
+        self.title = self.route.firstToLastName;
     }
     return self;
 }

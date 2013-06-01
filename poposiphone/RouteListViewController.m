@@ -61,7 +61,6 @@
         label.backgroundColor = [UIColor clearColor];
         [cell.imageView addSubview:label];
         cell.textLabel.font = [UIFont fontWithName:@"Futura-CondensedMedium" size:18.0];
-        cell.detailTextLabel.text = @"Distance: 1.0 Miles";
         cell.detailTextLabel.font = [UIFont fontWithName:@"GillSans-Light" size:12.0];
     }
     
@@ -70,6 +69,7 @@
     
     Route *route = self.routeRepository.routes[indexPath.row];    
     cell.textLabel.text = route.firstToLastName;
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"Distance: %@ miles", route.miles];
     return cell;
 }
 
