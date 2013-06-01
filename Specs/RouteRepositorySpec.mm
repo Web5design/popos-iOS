@@ -26,6 +26,12 @@ describe(@"RouteRepository", ^{
         [routeRepository addSpaces:spaceRepository];
         [((Route *)routeRepository.routes[0]).spaces count] should equal(7);
     });
+    
+    it(@"should give the routes start and end names based on their spaces", ^{
+        Route *route = routeRepository.routes[0];
+        [routeRepository addSpaces:spaceRepository];
+        [route firstToLastName] should equal(@"Redwood Park to Commercial Street");
+    });
 });
 
 SPEC_END

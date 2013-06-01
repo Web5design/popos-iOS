@@ -69,7 +69,7 @@
     label.text = [NSString stringWithFormat:@"%d", indexPath.row+1];
     
     Route *route = self.routeRepository.routes[indexPath.row];    
-    cell.textLabel.text = [NSString stringWithFormat:@"%@ STREET TO FAKE STREET", route.identifier];
+    cell.textLabel.text = route.firstToLastName;
     return cell;
 }
 

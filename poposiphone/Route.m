@@ -1,4 +1,5 @@
 #import "Route.h"
+#import "Space.h"
 
 @interface Route ()
 @property (strong, nonatomic, readwrite) NSArray *coordinates;
@@ -13,5 +14,11 @@
         self.coordinates = coordinates;
     }
     return self;
+}
+
+- (NSString *)firstToLastName {
+    NSString *firstSpaceName = ((Space *)self.spaces[0]).identifier;
+    NSString *lastSpaceName = ((Space *)self.spaces[self.spaces.count - 1]).identifier;
+    return [NSString stringWithFormat:@"%@ to %@", firstSpaceName, lastSpaceName];
 }
 @end
