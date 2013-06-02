@@ -33,7 +33,8 @@
 
 + (Space *)spaceFromGeoJSON:(NSDictionary *)json {
     CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake([json[@"geometry"][@"coordinates"][1] floatValue],[json[@"geometry"][@"coordinates"][0] floatValue]);
-    return [[Space alloc] initWithIdentifier:json[@"id"] coordinate:coordinate imageUrl:json[@"properties"][@"pic_file"] description:json[@"properties"][@"description"] routeIdentifier:[NSString stringWithFormat:@"%d", [json[@"properties"][@"Route"] integerValue]]];
+    BOOL food = [json[@"properties"][@"food"] isEqualToString:@"Y"];
+    return [[Space alloc] initWithIdentifier:json[@"id"] coordinate:coordinate imageUrl:json[@"properties"][@"pic_file"] description:json[@"properties"][@"description"] routeIdentifier:[NSString stringWithFormat:@"%d", [json[@"properties"][@"Route"] integerValue]] food:food];
 }
 
 @end
