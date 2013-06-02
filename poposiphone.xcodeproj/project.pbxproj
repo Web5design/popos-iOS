@@ -43,6 +43,8 @@
 		DF050714175AC78E0050AFF9 /* WifiGrey@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF050712175AC78E0050AFF9 /* WifiGrey@2x.png */; };
 		DF050716175AC7A10050AFF9 /* 24hGrey@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF050715175AC7A00050AFF9 /* 24hGrey@2x.png */; };
 		DF050717175AC7A10050AFF9 /* 24hGrey@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF050715175AC7A00050AFF9 /* 24hGrey@2x.png */; };
+		DF05071C175ACA360050AFF9 /* ICON_57px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF05071B175ACA360050AFF9 /* ICON_57px.png */; };
+		DF05071E175ACA3C0050AFF9 /* ICON_114px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF05071D175ACA3C0050AFF9 /* ICON_114px.png */; };
 		DF3FECC917587DB5002C48F2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF4B9AD2174AD44A00ED4D13 /* UIKit.framework */; };
 		DF3FECCA17587DB5002C48F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF4B9AD4174AD44A00ED4D13 /* Foundation.framework */; };
 		DF3FECCB17587DB5002C48F2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF4B9AD6174AD44A00ED4D13 /* CoreGraphics.framework */; };
@@ -117,6 +119,8 @@
 		DF05070F175AC7810050AFF9 /* OutdoorGrey@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OutdoorGrey@2x.png"; sourceTree = "<group>"; };
 		DF050712175AC78E0050AFF9 /* WifiGrey@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WifiGrey@2x.png"; sourceTree = "<group>"; };
 		DF050715175AC7A00050AFF9 /* 24hGrey@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "24hGrey@2x.png"; sourceTree = "<group>"; };
+		DF05071B175ACA360050AFF9 /* ICON_57px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ICON_57px.png; sourceTree = "<group>"; };
+		DF05071D175ACA3C0050AFF9 /* ICON_114px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ICON_114px.png; sourceTree = "<group>"; };
 		DF3FECC817587DB5002C48F2 /* Specs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Specs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF3FECCE17587DB5002C48F2 /* Specs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Specs-Info.plist"; sourceTree = "<group>"; };
 		DF3FECD017587DB5002C48F2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -293,6 +297,8 @@
 		DF4B9AC6174AD44A00ED4D13 = {
 			isa = PBXGroup;
 			children = (
+				DF05071D175ACA3C0050AFF9 /* ICON_114px.png */,
+				DF05071B175ACA360050AFF9 /* ICON_57px.png */,
 				DFBF2276174E769E00F1BF87 /* MapBox.bundle */,
 				DF4B9AF7174AD73100ED4D13 /* libz.dylib */,
 				DF4B9AF5174AD72800ED4D13 /* libsqlite3.dylib */,
@@ -487,6 +493,8 @@
 				DF050710175AC7810050AFF9 /* OutdoorGrey@2x.png in Resources */,
 				DF050713175AC78E0050AFF9 /* WifiGrey@2x.png in Resources */,
 				DF050716175AC7A10050AFF9 /* 24hGrey@2x.png in Resources */,
+				DF05071C175ACA360050AFF9 /* ICON_57px.png in Resources */,
+				DF05071E175ACA3C0050AFF9 /* ICON_114px.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -658,7 +666,7 @@
 				INFOPLIST_FILE = "poposiphone/poposiphone-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "0BF27324-4B84-447A-8BF7-6635EF281053";
+				PROVISIONING_PROFILE = "23F09DBB-58E1-473F-A1E2-8E86947F1B8A";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -676,7 +684,7 @@
 				INFOPLIST_FILE = "poposiphone/poposiphone-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "0BF27324-4B84-447A-8BF7-6635EF281053";
+				PROVISIONING_PROFILE = "23F09DBB-58E1-473F-A1E2-8E86947F1B8A";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
