@@ -5,5 +5,5 @@
 @property (strong, nonatomic, readonly) NSString *identifier;
 @property (strong, nonatomic, readonly) NSArray *coordinates;
 @property (strong, nonatomic, readwrite) NSArray *spaces;
-@property (strong, nonatomic, readwrite) NSArray *miles;
+@property (strong, nonatomic, readwrite) NSString *miles;
 @end
