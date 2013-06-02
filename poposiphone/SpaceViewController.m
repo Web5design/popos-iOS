@@ -30,6 +30,10 @@
     
     self.textView.text = self.space.description;
     self.textView.scrollEnabled = YES;
+    
+    if(self.space.food) {
+        self.foodIcon.image = [UIImage imageNamed:@"Food.png"];
+    }
 }
 
 @end
