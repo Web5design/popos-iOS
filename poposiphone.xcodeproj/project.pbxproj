@@ -134,7 +134,7 @@
 		DF3FECE217587EF7002C48F2 /* tabBarAppearance@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabBarAppearance@2x.png"; sourceTree = "<group>"; };
 		DF3FECEB175880B5002C48F2 /* SpaceRepositorySpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SpaceRepositorySpec.mm; sourceTree = "<group>"; };
 		DF3FECF81759228C002C48F2 /* CellCircle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CellCircle@2x.png"; sourceTree = "<group>"; };
-		DF4B9ACF174AD44A00ED4D13 /* poposiphone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = poposiphone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF4B9ACF174AD44A00ED4D13 /* popos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = popos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF4B9AD2174AD44A00ED4D13 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DF4B9AD4174AD44A00ED4D13 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DF4B9AD6174AD44A00ED4D13 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -315,7 +315,7 @@
 		DF4B9AD0174AD44A00ED4D13 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DF4B9ACF174AD44A00ED4D13 /* poposiphone.app */,
+				DF4B9ACF174AD44A00ED4D13 /* popos.app */,
 				DF3FECC817587DB5002C48F2 /* Specs.app */,
 			);
 			name = Products;
@@ -378,9 +378,9 @@
 			productReference = DF3FECC817587DB5002C48F2 /* Specs.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DF4B9ACE174AD44A00ED4D13 /* poposiphone */ = {
+		DF4B9ACE174AD44A00ED4D13 /* popos */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DF4B9AEC174AD44B00ED4D13 /* Build configuration list for PBXNativeTarget "poposiphone" */;
+			buildConfigurationList = DF4B9AEC174AD44B00ED4D13 /* Build configuration list for PBXNativeTarget "popos" */;
 			buildPhases = (
 				DF4B9ACB174AD44A00ED4D13 /* Sources */,
 				DF4B9ACC174AD44A00ED4D13 /* Frameworks */,
@@ -390,9 +390,9 @@
 			);
 			dependencies = (
 			);
-			name = poposiphone;
+			name = popos;
 			productName = poposiphone;
-			productReference = DF4B9ACF174AD44A00ED4D13 /* poposiphone.app */;
+			productReference = DF4B9ACF174AD44A00ED4D13 /* popos.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -416,7 +416,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DF4B9ACE174AD44A00ED4D13 /* poposiphone */,
+				DF4B9ACE174AD44A00ED4D13 /* popos */,
 				DF3FECC717587DB5002C48F2 /* Specs */,
 			);
 		};
@@ -656,7 +656,7 @@
 		DF4B9AED174AD44B00ED4D13 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Brandon Liu (WNSC27EEHU)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Brandon Liu (Z3YTA4ETGV)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -666,7 +666,7 @@
 				INFOPLIST_FILE = "poposiphone/poposiphone-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "23F09DBB-58E1-473F-A1E2-8E86947F1B8A";
+				PROVISIONING_PROFILE = "6686D427-19E7-4F50-88E1-820FE9E48DBC";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -674,7 +674,7 @@
 		DF4B9AEE174AD44B00ED4D13 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Brandon Liu (WNSC27EEHU)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Brandon Liu (Z3YTA4ETGV)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -684,7 +684,7 @@
 				INFOPLIST_FILE = "poposiphone/poposiphone-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "23F09DBB-58E1-473F-A1E2-8E86947F1B8A";
+				PROVISIONING_PROFILE = "6686D427-19E7-4F50-88E1-820FE9E48DBC";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -710,7 +710,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DF4B9AEC174AD44B00ED4D13 /* Build configuration list for PBXNativeTarget "poposiphone" */ = {
+		DF4B9AEC174AD44B00ED4D13 /* Build configuration list for PBXNativeTarget "popos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DF4B9AED174AD44B00ED4D13 /* Debug */,

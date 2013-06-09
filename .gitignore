@@ -2,3 +2,4 @@ poposiphone.xcodeproj/project.xcworkspace/
 poposiphone.xcodeproj/xcuserdata/
 *.mobileprovision
 *.ipa
+Build/
