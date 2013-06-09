@@ -1,8 +1,8 @@
 #import "MapViewController.h"
+#import "SpaceViewController.h"
 #import <MapBox/MapBox.h>
 #import <MapBox/RMFoundation.h>
 #import <MapBox/RMMarker.h>
-#import "SpaceViewController.h"
 
 @interface MapViewController ()
 @property (strong, nonatomic, readwrite) SpaceRepository *spaceRepository;
@@ -21,11 +21,27 @@
     return self;
 }
 
+- (void)showOfflineMessage {
+    UILabel *isOffline = [[UILabel alloc] init];
+    isOffline.text = @"Internet Connection Needed!";
+    isOffline.backgroundColor = [UIColor clearColor];
+    [isOffline sizeToFit];
+    isOffline.font = [UIFont fontWithName:@"GillSans" size:14.0];
+    isOffline.textColor = [UIColor whiteColor];
+    isOffline.center = CGPointMake(160,200);
+    [self.view addSubview:isOffline];
+    isOffline.textAlignment = NSTextAlignmentCenter;
+    self.view.backgroundColor = [UIColor colorWithRed:44/255.0 green:44/255.0 blue:56/255.0 alpha:1.0];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 
     RMMapBoxSource *onlineSource = [[RMMapBoxSource alloc] initWithMapID:@"cdawson.map-0ymh0yul"];
+
+    if(onlineSource == nil) [self showOfflineMessage];
+
     RMMapView *mapView = [[RMMapView alloc] initWithFrame:self.view.bounds andTilesource:onlineSource];
     mapView.delegate = self;
     mapView.showLogoBug = NO;

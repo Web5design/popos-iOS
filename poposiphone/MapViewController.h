@@ -1,7 +1,7 @@
 #import <UIKit/UIKit.h>
 #import "SpaceRepository.h"
 #import "RouteRepository.h"
-#import <MapBox/RMMapViewDelegate.h>
+#import <MapBox/MapBox.h>
 
 @interface MapViewController : UIViewController <RMMapViewDelegate>
 @property (strong, nonatomic, readonly) SpaceRepository *spaceRepository;
