@@ -67,6 +67,9 @@
         
         return marker;
     }
+
+    [self doesNotRecognizeSelector:_cmd];
+    return nil;
 }
 
 - (void)mapView:(RMMapView *)mapView didSelectAnnotation:(RMAnnotation *)annotation {

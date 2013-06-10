@@ -141,6 +141,9 @@
     } else if ([annotation.userInfo[@"type"] isEqualToString:@"space"]) {
         return [[RMMarker alloc] initWithUIImage:[UIImage imageNamed:@"Marker.png"]];
     }
+
+    [self doesNotRecognizeSelector:_cmd];
+    return nil;
 }
 
 @end
