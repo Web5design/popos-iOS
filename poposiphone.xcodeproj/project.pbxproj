@@ -79,7 +79,6 @@
 		DF4B9AE5174AD44B00ED4D13 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DF4B9AE4174AD44B00ED4D13 /* Default.png */; };
 		DF4B9AE7174AD44B00ED4D13 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF4B9AE6174AD44B00ED4D13 /* Default@2x.png */; };
 		DF4B9AE9174AD44B00ED4D13 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF4B9AE8174AD44B00ED4D13 /* Default-568h@2x.png */; };
-		DF4B9AF0174AD6DB00ED4D13 /* MapBox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF4B9AEF174AD6DB00ED4D13 /* MapBox.framework */; };
 		DF4B9AF2174AD71300ED4D13 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF4B9AF1174AD71300ED4D13 /* CoreLocation.framework */; };
 		DF4B9AF4174AD71B00ED4D13 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF4B9AF3174AD71B00ED4D13 /* QuartzCore.framework */; };
 		DF4B9AF6174AD72800ED4D13 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DF4B9AF5174AD72800ED4D13 /* libsqlite3.dylib */; };
@@ -98,7 +97,32 @@
 		DF8E384117580A2C009DF29B /* RouteDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF8E383F17580A2C009DF29B /* RouteDetailViewController.xib */; };
 		DFA31429174D50A50073DAA2 /* sfpopos-routes-collection.geojson in Resources */ = {isa = PBXBuildFile; fileRef = DFA31428174D50A50073DAA2 /* sfpopos-routes-collection.geojson */; };
 		DFBF2277174E769E00F1BF87 /* MapBox.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DFBF2276174E769E00F1BF87 /* MapBox.bundle */; };
+		DFD4BA54176557150093EBF2 /* libMapBox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DFD4BA4D1765537A0093EBF2 /* libMapBox.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DFD4BA4C1765537A0093EBF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFD4BA471765537A0093EBF2 /* MapView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 17F31EFA1331050A00122B16;
+			remoteInfo = MapView;
+		};
+		DFD4BA4E1765537A0093EBF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFD4BA471765537A0093EBF2 /* MapView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DD6A83751644A20C0097F31F;
+			remoteInfo = Resources;
+		};
+		DFD4BA521765559B0093EBF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFD4BA471765537A0093EBF2 /* MapView.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B8C974130E8A19B2007D16AD;
+			remoteInfo = MapView;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		DF0506CD17595F040050AFF9 /* PathMenuIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PathMenuIcon@2x.png"; sourceTree = "<group>"; };
@@ -147,7 +171,6 @@
 		DF4B9AE4174AD44B00ED4D13 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		DF4B9AE6174AD44B00ED4D13 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		DF4B9AE8174AD44B00ED4D13 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		DF4B9AEF174AD6DB00ED4D13 /* MapBox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MapBox.framework; sourceTree = "<group>"; };
 		DF4B9AF1174AD71300ED4D13 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		DF4B9AF3174AD71B00ED4D13 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		DF4B9AF5174AD72800ED4D13 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
@@ -174,6 +197,7 @@
 		DF8E383F17580A2C009DF29B /* RouteDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RouteDetailViewController.xib; sourceTree = "<group>"; };
 		DFA31428174D50A50073DAA2 /* sfpopos-routes-collection.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "sfpopos-routes-collection.geojson"; sourceTree = "<group>"; };
 		DFBF2276174E769E00F1BF87 /* MapBox.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MapBox.bundle; sourceTree = "<group>"; };
+		DFD4BA471765537A0093EBF2 /* MapView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MapView.xcodeproj; path = "MapBox-iOS-SDK/MapView/MapView.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +217,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFD4BA54176557150093EBF2 /* libMapBox.a in Frameworks */,
 				DF4B9AF8174AD73100ED4D13 /* libz.dylib in Frameworks */,
 				DF4B9AF6174AD72800ED4D13 /* libsqlite3.dylib in Frameworks */,
 				DF4B9AF4174AD71B00ED4D13 /* QuartzCore.framework in Frameworks */,
@@ -200,7 +225,6 @@
 				DF4B9AD3174AD44A00ED4D13 /* UIKit.framework in Frameworks */,
 				DF4B9AD5174AD44A00ED4D13 /* Foundation.framework in Frameworks */,
 				DF4B9AD7174AD44B00ED4D13 /* CoreGraphics.framework in Frameworks */,
-				DF4B9AF0174AD6DB00ED4D13 /* MapBox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +321,7 @@
 		DF4B9AC6174AD44A00ED4D13 = {
 			isa = PBXGroup;
 			children = (
+				DFD4BA471765537A0093EBF2 /* MapView.xcodeproj */,
 				DF05071D175ACA3C0050AFF9 /* ICON_114px.png */,
 				DF05071B175ACA360050AFF9 /* ICON_57px.png */,
 				DFBF2276174E769E00F1BF87 /* MapBox.bundle */,
@@ -324,7 +349,6 @@
 		DF4B9AD1174AD44A00ED4D13 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DF4B9AEF174AD6DB00ED4D13 /* MapBox.framework */,
 				DF4B9AD2174AD44A00ED4D13 /* UIKit.framework */,
 				DF4B9AD4174AD44A00ED4D13 /* Foundation.framework */,
 				DF4B9AD6174AD44A00ED4D13 /* CoreGraphics.framework */,
@@ -358,6 +382,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		DFD4BA481765537A0093EBF2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DFD4BA4D1765537A0093EBF2 /* libMapBox.a */,
+				DFD4BA4F1765537A0093EBF2 /* MapBox.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -389,6 +422,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				DFD4BA531765559B0093EBF2 /* PBXTargetDependency */,
 			);
 			name = popos;
 			productName = poposiphone;
@@ -414,6 +448,12 @@
 			mainGroup = DF4B9AC6174AD44A00ED4D13;
 			productRefGroup = DF4B9AD0174AD44A00ED4D13 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = DFD4BA481765537A0093EBF2 /* Products */;
+					ProjectRef = DFD4BA471765537A0093EBF2 /* MapView.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				DF4B9ACE174AD44A00ED4D13 /* popos */,
@@ -421,6 +461,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		DFD4BA4D1765537A0093EBF2 /* libMapBox.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMapBox.a;
+			remoteRef = DFD4BA4C1765537A0093EBF2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DFD4BA4F1765537A0093EBF2 /* MapBox.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = MapBox.bundle;
+			remoteRef = DFD4BA4E1765537A0093EBF2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		DF3FECC617587DB5002C48F2 /* Resources */ = {
@@ -533,6 +590,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DFD4BA531765559B0093EBF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MapView;
+			targetProxy = DFD4BA521765559B0093EBF2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DF3FECCF17587DB5002C48F2 /* InfoPlist.strings */ = {
@@ -663,6 +728,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "poposiphone/poposiphone-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$SRCROOT/MapBox-iOS-SDK/**";
 				INFOPLIST_FILE = "poposiphone/poposiphone-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -681,6 +747,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "poposiphone/poposiphone-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$SRCROOT/MapBox-iOS-SDK/**";
 				INFOPLIST_FILE = "poposiphone/poposiphone-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";

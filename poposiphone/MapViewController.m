@@ -1,8 +1,5 @@
 #import "MapViewController.h"
 #import "SpaceViewController.h"
-#import <MapBox/MapBox.h>
-#import <MapBox/RMFoundation.h>
-#import <MapBox/RMMarker.h>
 
 @interface MapViewController ()
 @property (strong, nonatomic, readwrite) SpaceRepository *spaceRepository;

@@ -1,5 +1,5 @@
 #import <UIKit/UIKit.h>
-#import <MapBox/MapBox.h>
+#import "MapBox.h"
 #import "Route.h"
 
 @interface RouteDetailViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, RMMapViewDelegate>
