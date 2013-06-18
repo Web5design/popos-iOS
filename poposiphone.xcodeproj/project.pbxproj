@@ -158,7 +158,7 @@
 		DF3FECE217587EF7002C48F2 /* tabBarAppearance@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabBarAppearance@2x.png"; sourceTree = "<group>"; };
 		DF3FECEB175880B5002C48F2 /* SpaceRepositorySpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SpaceRepositorySpec.mm; sourceTree = "<group>"; };
 		DF3FECF81759228C002C48F2 /* CellCircle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CellCircle@2x.png"; sourceTree = "<group>"; };
-		DF4B9ACF174AD44A00ED4D13 /* popos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = popos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF4B9ACF174AD44A00ED4D13 /* UrbanWander.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UrbanWander.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF4B9AD2174AD44A00ED4D13 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DF4B9AD4174AD44A00ED4D13 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DF4B9AD6174AD44A00ED4D13 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -340,7 +340,7 @@
 		DF4B9AD0174AD44A00ED4D13 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DF4B9ACF174AD44A00ED4D13 /* popos.app */,
+				DF4B9ACF174AD44A00ED4D13 /* UrbanWander.app */,
 				DF3FECC817587DB5002C48F2 /* Specs.app */,
 			);
 			name = Products;
@@ -426,7 +426,7 @@
 			);
 			name = popos;
 			productName = poposiphone;
-			productReference = DF4B9ACF174AD44A00ED4D13 /* popos.app */;
+			productReference = DF4B9ACF174AD44A00ED4D13 /* UrbanWander.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -721,7 +721,7 @@
 		DF4B9AED174AD44B00ED4D13 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Brandon Liu (Z3YTA4ETGV)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Brandon Liu (WNSC27EEHU)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -731,8 +731,8 @@
 				HEADER_SEARCH_PATHS = "$SRCROOT/MapBox-iOS-SDK/**";
 				INFOPLIST_FILE = "poposiphone/poposiphone-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "6686D427-19E7-4F50-88E1-820FE9E48DBC";
+				PRODUCT_NAME = UrbanWander;
+				PROVISIONING_PROFILE = "67EEE09B-BA43-4CBE-9D42-EB74A0D4B343";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -740,7 +740,7 @@
 		DF4B9AEE174AD44B00ED4D13 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Brandon Liu (Z3YTA4ETGV)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Brandon Liu (WNSC27EEHU)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -750,8 +750,8 @@
 				HEADER_SEARCH_PATHS = "$SRCROOT/MapBox-iOS-SDK/**";
 				INFOPLIST_FILE = "poposiphone/poposiphone-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "6686D427-19E7-4F50-88E1-820FE9E48DBC";
+				PRODUCT_NAME = UrbanWander;
+				PROVISIONING_PROFILE = "67EEE09B-BA43-4CBE-9D42-EB74A0D4B343";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
