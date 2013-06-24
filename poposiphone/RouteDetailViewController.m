@@ -72,8 +72,7 @@
         button.frame = frame;
         [button addTarget:self action:@selector(accessoryTapped:event:)  forControlEvents:UIControlEventTouchUpInside];
         [button setBackgroundImage:image forState:UIControlStateNormal];
-        
-        button.backgroundColor = [UIColor clearColor];
+        button.frame = CGRectMake(0, 0, 60, 44);
         cell.accessoryView = button;
         
         UIView *bgColorView = [[UIView alloc] init];
