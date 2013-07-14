@@ -43,6 +43,13 @@
 		DF050717175AC7A10050AFF9 /* 24hGrey@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF050715175AC7A00050AFF9 /* 24hGrey@2x.png */; };
 		DF05071C175ACA360050AFF9 /* ICON_57px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF05071B175ACA360050AFF9 /* ICON_57px.png */; };
 		DF05071E175ACA3C0050AFF9 /* ICON_114px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF05071D175ACA3C0050AFF9 /* ICON_114px.png */; };
+		DF3A949917935A0B00F7E689 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF3A949817935A0B00F7E689 /* MapKit.framework */; };
+		DF3A94A9179362AF00F7E689 /* FilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3A94A7179362AF00F7E689 /* FilterViewController.m */; };
+		DF3A94AA179362AF00F7E689 /* FilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3A94A7179362AF00F7E689 /* FilterViewController.m */; };
+		DF3A94AB179362AF00F7E689 /* FilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF3A94A8179362AF00F7E689 /* FilterViewController.xib */; };
+		DF3A94AC179362AF00F7E689 /* FilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF3A94A8179362AF00F7E689 /* FilterViewController.xib */; };
+		DF3A94B11793688800F7E689 /* BlueDot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF3A94B01793688800F7E689 /* BlueDot@2x.png */; };
+		DF3A94B21793688800F7E689 /* BlueDot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF3A94B01793688800F7E689 /* BlueDot@2x.png */; };
 		DF3FECC917587DB5002C48F2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF4B9AD2174AD44A00ED4D13 /* UIKit.framework */; };
 		DF3FECCA17587DB5002C48F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF4B9AD4174AD44A00ED4D13 /* Foundation.framework */; };
 		DF3FECCB17587DB5002C48F2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF4B9AD6174AD44A00ED4D13 /* CoreGraphics.framework */; };
@@ -142,6 +149,11 @@
 		DF050715175AC7A00050AFF9 /* 24hGrey@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "24hGrey@2x.png"; sourceTree = "<group>"; };
 		DF05071B175ACA360050AFF9 /* ICON_57px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ICON_57px.png; sourceTree = "<group>"; };
 		DF05071D175ACA3C0050AFF9 /* ICON_114px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ICON_114px.png; sourceTree = "<group>"; };
+		DF3A949817935A0B00F7E689 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		DF3A94A6179362AF00F7E689 /* FilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterViewController.h; sourceTree = "<group>"; };
+		DF3A94A7179362AF00F7E689 /* FilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterViewController.m; sourceTree = "<group>"; };
+		DF3A94A8179362AF00F7E689 /* FilterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterViewController.xib; sourceTree = "<group>"; };
+		DF3A94B01793688800F7E689 /* BlueDot@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BlueDot@2x.png"; sourceTree = "<group>"; };
 		DF3FECC817587DB5002C48F2 /* Specs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Specs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF3FECCE17587DB5002C48F2 /* Specs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Specs-Info.plist"; sourceTree = "<group>"; };
 		DF3FECD017587DB5002C48F2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -214,6 +226,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF3A949917935A0B00F7E689 /* MapKit.framework in Frameworks */,
 				DFD4BA54176557150093EBF2 /* libMapBox.a in Frameworks */,
 				DF4B9AF8174AD73100ED4D13 /* libz.dylib in Frameworks */,
 				DF4B9AF6174AD72800ED4D13 /* libsqlite3.dylib in Frameworks */,
@@ -270,17 +283,20 @@
 			children = (
 				DF4B9AE1174AD44B00ED4D13 /* AppDelegate.h */,
 				DF4B9AE2174AD44B00ED4D13 /* AppDelegate.m */,
+				DF3A94A6179362AF00F7E689 /* FilterViewController.h */,
+				DF3A94A7179362AF00F7E689 /* FilterViewController.m */,
+				DF3A94A8179362AF00F7E689 /* FilterViewController.xib */,
 				DF4B9AFB174AD9E800ED4D13 /* MapViewController.h */,
 				DF4B9AFC174AD9E800ED4D13 /* MapViewController.m */,
-				DF4B9B08174B429800ED4D13 /* SpaceViewController.h */,
-				DF4B9B09174B429800ED4D13 /* SpaceViewController.m */,
-				DF4B9B0A174B429800ED4D13 /* SpaceViewController.xib */,
-				DF52EF711756BCE800211DAC /* RouteListViewController.h */,
-				DF52EF721756BCE800211DAC /* RouteListViewController.m */,
-				DF52EF731756BCE800211DAC /* RouteListViewController.xib */,
 				DF8E383D17580A2C009DF29B /* RouteDetailViewController.h */,
 				DF8E383E17580A2C009DF29B /* RouteDetailViewController.m */,
 				DF8E383F17580A2C009DF29B /* RouteDetailViewController.xib */,
+				DF52EF711756BCE800211DAC /* RouteListViewController.h */,
+				DF52EF721756BCE800211DAC /* RouteListViewController.m */,
+				DF52EF731756BCE800211DAC /* RouteListViewController.xib */,
+				DF4B9B08174B429800ED4D13 /* SpaceViewController.h */,
+				DF4B9B09174B429800ED4D13 /* SpaceViewController.m */,
+				DF4B9B0A174B429800ED4D13 /* SpaceViewController.xib */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -288,6 +304,7 @@
 		DF3FECDE17587EF7002C48F2 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				DF3A94B01793688800F7E689 /* BlueDot@2x.png */,
 				DF050715175AC7A00050AFF9 /* 24hGrey@2x.png */,
 				DF0506E8175992060050AFF9 /* 24h@2x.png */,
 				DF0506E9175992060050AFF9 /* Art@2x.png */,
@@ -317,6 +334,7 @@
 		DF4B9AC6174AD44A00ED4D13 = {
 			isa = PBXGroup;
 			children = (
+				DF3A949817935A0B00F7E689 /* MapKit.framework */,
 				DFD4BA471765537A0093EBF2 /* MapView.xcodeproj */,
 				DF05071D175ACA3C0050AFF9 /* ICON_114px.png */,
 				DF05071B175ACA360050AFF9 /* ICON_57px.png */,
@@ -505,6 +523,8 @@
 				DF050711175AC7810050AFF9 /* OutdoorGrey@2x.png in Resources */,
 				DF050714175AC78E0050AFF9 /* WifiGrey@2x.png in Resources */,
 				DF050717175AC7A10050AFF9 /* 24hGrey@2x.png in Resources */,
+				DF3A94AC179362AF00F7E689 /* FilterViewController.xib in Resources */,
+				DF3A94B21793688800F7E689 /* BlueDot@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,6 +566,8 @@
 				DF050716175AC7A10050AFF9 /* 24hGrey@2x.png in Resources */,
 				DF05071C175ACA360050AFF9 /* ICON_57px.png in Resources */,
 				DF05071E175ACA3C0050AFF9 /* ICON_114px.png in Resources */,
+				DF3A94AB179362AF00F7E689 /* FilterViewController.xib in Resources */,
+				DF3A94B11793688800F7E689 /* BlueDot@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,6 +585,7 @@
 				DF3FECEE175882B3002C48F2 /* Space.m in Sources */,
 				DF3FECF217588472002C48F2 /* RouteRepository.m in Sources */,
 				DF3FECF317588475002C48F2 /* Route.m in Sources */,
+				DF3A94AA179362AF00F7E689 /* FilterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,6 +603,7 @@
 				DF8DB62E174BC5D100A70176 /* RouteRepository.m in Sources */,
 				DF52EF741756BCE800211DAC /* RouteListViewController.m in Sources */,
 				DF8E384017580A2C009DF29B /* RouteDetailViewController.m in Sources */,
+				DF3A94A9179362AF00F7E689 /* FilterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -715,7 +739,7 @@
 		DF4B9AED174AD44B00ED4D13 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Brandon Liu (WNSC27EEHU)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Brandon Liu (Z3YTA4ETGV)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -724,9 +748,10 @@
 				GCC_PREFIX_HEADER = "poposiphone/poposiphone-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$SRCROOT/MapBox-iOS-SDK/**";
 				INFOPLIST_FILE = "poposiphone/poposiphone-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = UrbanWander;
-				PROVISIONING_PROFILE = "67EEE09B-BA43-4CBE-9D42-EB74A0D4B343";
+				PROVISIONING_PROFILE = "F966A452-722E-43CD-A1A3-5FBFC390236B";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -734,7 +759,7 @@
 		DF4B9AEE174AD44B00ED4D13 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Brandon Liu (WNSC27EEHU)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Brandon Liu (Z3YTA4ETGV)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -743,9 +768,10 @@
 				GCC_PREFIX_HEADER = "poposiphone/poposiphone-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$SRCROOT/MapBox-iOS-SDK/**";
 				INFOPLIST_FILE = "poposiphone/poposiphone-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = UrbanWander;
-				PROVISIONING_PROFILE = "67EEE09B-BA43-4CBE-9D42-EB74A0D4B343";
+				PROVISIONING_PROFILE = "F966A452-722E-43CD-A1A3-5FBFC390236B";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

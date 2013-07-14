@@ -1,5 +1,6 @@
 #import "MapViewController.h"
 #import "SpaceViewController.h"
+#import "FilterViewController.h"
 
 @interface MapViewController ()
 @property (strong, nonatomic, readwrite) SpaceRepository *spaceRepository;
@@ -43,6 +44,7 @@
     mapView.delegate = self;
     mapView.showLogoBug = NO;
     mapView.zoom = 17;
+    
     mapView.centerCoordinate = CLLocationCoordinate2DMake(37.7920,-122.399);
     mapView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     CLLocationCoordinate2D southwest = CLLocationCoordinate2DMake(37.688, -122.5447);
@@ -55,10 +57,20 @@
         annotation.userInfo = @{@"type":@"space",@"obj":space};
         [mapView addAnnotation:annotation];
     }
+    mapView.showsUserLocation = YES;
+
+    UIBarButtonItem *filterButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"Marker.png"] style:UIBarButtonItemStyleBordered target:self action:@selector(showFilters)];
+    self.navigationItem.rightBarButtonItem = filterButton;
+}
+
+- (void)showFilters {
+    UIViewController *filterController = [[FilterViewController alloc] init];
+    [self presentViewController:filterController animated:YES completion:nil];
 }
 
 - (RMMapLayer *)mapView:(RMMapView *)mapView layerForAnnotation:(RMAnnotation *)annotation
 {
+
     if ([annotation.userInfo[@"type"] isEqualToString:@"space"]) {
         RMMarker *marker = [[RMMarker alloc] initWithUIImage:[UIImage imageNamed:@"Marker.png"]];
         marker.canShowCallout = YES;
@@ -66,18 +78,25 @@
         marker.rightCalloutAccessoryView = theButton;
         
         return marker;
+    } else {
+        // It's the current location marker
+        UIImage *testimage = [UIImage imageNamed:@"BlueDot.png"];
+        return [[RMMarker alloc] initWithUIImage:testimage];
     }
 
-    [self doesNotRecognizeSelector:_cmd];
     return nil;
 }
 
 - (void)mapView:(RMMapView *)mapView didSelectAnnotation:(RMAnnotation *)annotation {
-    [((RMMarker *)annotation.layer) replaceUIImage:[UIImage imageNamed:@"Marker_highlight.png"]];
+    if ([annotation.userInfo[@"type"] isEqualToString:@"space"]) {
+        [((RMMarker *)annotation.layer) replaceUIImage:[UIImage imageNamed:@"Marker_highlight.png"]];
+    }
 }
 
 - (void)mapView:(RMMapView *)mapView didDeselectAnnotation:(RMAnnotation *)annotation {
-    [((RMMarker *)annotation.layer) replaceUIImage:[UIImage imageNamed:@"Marker.png"]];
+    if ([annotation.userInfo[@"type"] isEqualToString:@"space"]) {
+        [((RMMarker *)annotation.layer) replaceUIImage:[UIImage imageNamed:@"Marker.png"]];
+    }
 }
 
 - (void)tapOnCalloutAccessoryControl:(UIControl *)control forAnnotation:(RMAnnotation *)annotation onMap:(RMMapView *)map
