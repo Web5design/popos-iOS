@@ -59,7 +59,12 @@
     }
     mapView.showsUserLocation = YES;
 
-    UIBarButtonItem *filterButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"Marker.png"] style:UIBarButtonItemStyleBordered target:self action:@selector(showFilters)];
+
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setImage:[UIImage imageNamed:@"FilterButton.png"] forState:UIControlStateNormal];
+    [button sizeToFit];
+    [button addTarget:self action:@selector(showFilters) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *filterButton = [[UIBarButtonItem alloc] initWithCustomView:button];
     self.navigationItem.rightBarButtonItem = filterButton;
 }
 

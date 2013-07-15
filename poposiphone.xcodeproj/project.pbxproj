@@ -56,6 +56,8 @@
 		DF3A94B917936A3000F7E689 /* PlannedRoutesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF3A94B517936A3000F7E689 /* PlannedRoutesViewController.xib */; };
 		DF3A94BC179373E900F7E689 /* BigPanelButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3A94BB179373E800F7E689 /* BigPanelButton.m */; };
 		DF3A94BD179373E900F7E689 /* BigPanelButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3A94BB179373E800F7E689 /* BigPanelButton.m */; };
+		DF3A94C217937EFA00F7E689 /* FilterButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF3A94C117937EFA00F7E689 /* FilterButton@2x.png */; };
+		DF3A94C317937EFA00F7E689 /* FilterButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF3A94C117937EFA00F7E689 /* FilterButton@2x.png */; };
 		DF3FECC917587DB5002C48F2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF4B9AD2174AD44A00ED4D13 /* UIKit.framework */; };
 		DF3FECCA17587DB5002C48F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF4B9AD4174AD44A00ED4D13 /* Foundation.framework */; };
 		DF3FECCB17587DB5002C48F2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF4B9AD6174AD44A00ED4D13 /* CoreGraphics.framework */; };
@@ -165,6 +167,7 @@
 		DF3A94B517936A3000F7E689 /* PlannedRoutesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlannedRoutesViewController.xib; sourceTree = "<group>"; };
 		DF3A94BA179373E800F7E689 /* BigPanelButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BigPanelButton.h; sourceTree = "<group>"; };
 		DF3A94BB179373E800F7E689 /* BigPanelButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BigPanelButton.m; sourceTree = "<group>"; };
+		DF3A94C117937EFA00F7E689 /* FilterButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FilterButton@2x.png"; sourceTree = "<group>"; };
 		DF3FECC817587DB5002C48F2 /* Specs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Specs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF3FECCE17587DB5002C48F2 /* Specs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Specs-Info.plist"; sourceTree = "<group>"; };
 		DF3FECD017587DB5002C48F2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -320,6 +323,7 @@
 		DF3FECDE17587EF7002C48F2 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				DF3A94C117937EFA00F7E689 /* FilterButton@2x.png */,
 				DF3A94B01793688800F7E689 /* BlueDot@2x.png */,
 				DF050715175AC7A00050AFF9 /* 24hGrey@2x.png */,
 				DF0506E8175992060050AFF9 /* 24h@2x.png */,
@@ -542,6 +546,7 @@
 				DF3A94AC179362AF00F7E689 /* FilterViewController.xib in Resources */,
 				DF3A94B21793688800F7E689 /* BlueDot@2x.png in Resources */,
 				DF3A94B917936A3000F7E689 /* PlannedRoutesViewController.xib in Resources */,
+				DF3A94C317937EFA00F7E689 /* FilterButton@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,6 +591,7 @@
 				DF3A94AB179362AF00F7E689 /* FilterViewController.xib in Resources */,
 				DF3A94B11793688800F7E689 /* BlueDot@2x.png in Resources */,
 				DF3A94B817936A3000F7E689 /* PlannedRoutesViewController.xib in Resources */,
+				DF3A94C217937EFA00F7E689 /* FilterButton@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
