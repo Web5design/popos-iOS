@@ -1,6 +1,6 @@
 #import "AppDelegate.h"
 #import "MapViewController.h"
-#import "RouteListViewController.h"
+#import "PlannedRoutesViewController.h"
 #import "SpaceRepository.h"
 
 @implementation AppDelegate
@@ -35,10 +35,10 @@
 
     UIViewController *mapViewController = [[MapViewController alloc] initWithSpaceRepository:spaceRepository routeRepository:routeRepository];
     UINavigationController *mapNavController = [[UINavigationController alloc] initWithRootViewController:mapViewController];
-    UIViewController *routeListViewController = [[RouteListViewController alloc] initWithRouteRepository:routeRepository];
-    routeListViewController.title = @"PLANNED ROUTES";
+    UIViewController *plannedRoutesViewController = [[PlannedRoutesViewController alloc] initWithRouteRepository:routeRepository];
+    plannedRoutesViewController.title = @"PLANNED ROUTES";
     
-    UINavigationController *routeNavController = [[UINavigationController alloc] initWithRootViewController:routeListViewController];
+    UINavigationController *routeNavController = [[UINavigationController alloc] initWithRootViewController:plannedRoutesViewController];
 
     
     tabBarController.viewControllers = @[mapNavController, routeNavController];

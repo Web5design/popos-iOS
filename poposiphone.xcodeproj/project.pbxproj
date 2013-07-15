@@ -50,6 +50,12 @@
 		DF3A94AC179362AF00F7E689 /* FilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF3A94A8179362AF00F7E689 /* FilterViewController.xib */; };
 		DF3A94B11793688800F7E689 /* BlueDot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF3A94B01793688800F7E689 /* BlueDot@2x.png */; };
 		DF3A94B21793688800F7E689 /* BlueDot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF3A94B01793688800F7E689 /* BlueDot@2x.png */; };
+		DF3A94B617936A3000F7E689 /* PlannedRoutesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3A94B417936A3000F7E689 /* PlannedRoutesViewController.m */; };
+		DF3A94B717936A3000F7E689 /* PlannedRoutesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3A94B417936A3000F7E689 /* PlannedRoutesViewController.m */; };
+		DF3A94B817936A3000F7E689 /* PlannedRoutesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF3A94B517936A3000F7E689 /* PlannedRoutesViewController.xib */; };
+		DF3A94B917936A3000F7E689 /* PlannedRoutesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF3A94B517936A3000F7E689 /* PlannedRoutesViewController.xib */; };
+		DF3A94BC179373E900F7E689 /* BigPanelButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3A94BB179373E800F7E689 /* BigPanelButton.m */; };
+		DF3A94BD179373E900F7E689 /* BigPanelButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3A94BB179373E800F7E689 /* BigPanelButton.m */; };
 		DF3FECC917587DB5002C48F2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF4B9AD2174AD44A00ED4D13 /* UIKit.framework */; };
 		DF3FECCA17587DB5002C48F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF4B9AD4174AD44A00ED4D13 /* Foundation.framework */; };
 		DF3FECCB17587DB5002C48F2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF4B9AD6174AD44A00ED4D13 /* CoreGraphics.framework */; };
@@ -154,6 +160,11 @@
 		DF3A94A7179362AF00F7E689 /* FilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterViewController.m; sourceTree = "<group>"; };
 		DF3A94A8179362AF00F7E689 /* FilterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterViewController.xib; sourceTree = "<group>"; };
 		DF3A94B01793688800F7E689 /* BlueDot@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BlueDot@2x.png"; sourceTree = "<group>"; };
+		DF3A94B317936A3000F7E689 /* PlannedRoutesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlannedRoutesViewController.h; sourceTree = "<group>"; };
+		DF3A94B417936A3000F7E689 /* PlannedRoutesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlannedRoutesViewController.m; sourceTree = "<group>"; };
+		DF3A94B517936A3000F7E689 /* PlannedRoutesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlannedRoutesViewController.xib; sourceTree = "<group>"; };
+		DF3A94BA179373E800F7E689 /* BigPanelButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BigPanelButton.h; sourceTree = "<group>"; };
+		DF3A94BB179373E800F7E689 /* BigPanelButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BigPanelButton.m; sourceTree = "<group>"; };
 		DF3FECC817587DB5002C48F2 /* Specs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Specs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF3FECCE17587DB5002C48F2 /* Specs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Specs-Info.plist"; sourceTree = "<group>"; };
 		DF3FECD017587DB5002C48F2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -288,6 +299,9 @@
 				DF3A94A8179362AF00F7E689 /* FilterViewController.xib */,
 				DF4B9AFB174AD9E800ED4D13 /* MapViewController.h */,
 				DF4B9AFC174AD9E800ED4D13 /* MapViewController.m */,
+				DF3A94B317936A3000F7E689 /* PlannedRoutesViewController.h */,
+				DF3A94B417936A3000F7E689 /* PlannedRoutesViewController.m */,
+				DF3A94B517936A3000F7E689 /* PlannedRoutesViewController.xib */,
 				DF8E383D17580A2C009DF29B /* RouteDetailViewController.h */,
 				DF8E383E17580A2C009DF29B /* RouteDetailViewController.m */,
 				DF8E383F17580A2C009DF29B /* RouteDetailViewController.xib */,
@@ -297,6 +311,8 @@
 				DF4B9B08174B429800ED4D13 /* SpaceViewController.h */,
 				DF4B9B09174B429800ED4D13 /* SpaceViewController.m */,
 				DF4B9B0A174B429800ED4D13 /* SpaceViewController.xib */,
+				DF3A94BA179373E800F7E689 /* BigPanelButton.h */,
+				DF3A94BB179373E800F7E689 /* BigPanelButton.m */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -525,6 +541,7 @@
 				DF050717175AC7A10050AFF9 /* 24hGrey@2x.png in Resources */,
 				DF3A94AC179362AF00F7E689 /* FilterViewController.xib in Resources */,
 				DF3A94B21793688800F7E689 /* BlueDot@2x.png in Resources */,
+				DF3A94B917936A3000F7E689 /* PlannedRoutesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -568,6 +585,7 @@
 				DF05071E175ACA3C0050AFF9 /* ICON_114px.png in Resources */,
 				DF3A94AB179362AF00F7E689 /* FilterViewController.xib in Resources */,
 				DF3A94B11793688800F7E689 /* BlueDot@2x.png in Resources */,
+				DF3A94B817936A3000F7E689 /* PlannedRoutesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,6 +604,8 @@
 				DF3FECF217588472002C48F2 /* RouteRepository.m in Sources */,
 				DF3FECF317588475002C48F2 /* Route.m in Sources */,
 				DF3A94AA179362AF00F7E689 /* FilterViewController.m in Sources */,
+				DF3A94B717936A3000F7E689 /* PlannedRoutesViewController.m in Sources */,
+				DF3A94BD179373E900F7E689 /* BigPanelButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -604,6 +624,8 @@
 				DF52EF741756BCE800211DAC /* RouteListViewController.m in Sources */,
 				DF8E384017580A2C009DF29B /* RouteDetailViewController.m in Sources */,
 				DF3A94A9179362AF00F7E689 /* FilterViewController.m in Sources */,
+				DF3A94B617936A3000F7E689 /* PlannedRoutesViewController.m in Sources */,
+				DF3A94BC179373E900F7E689 /* BigPanelButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
