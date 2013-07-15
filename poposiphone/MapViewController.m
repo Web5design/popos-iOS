@@ -36,7 +36,7 @@
 {
     [super viewDidLoad];
 
-    RMMapBoxSource *onlineSource = [[RMMapBoxSource alloc] initWithMapID:@"cdawson.map-0ymh0yul"];
+    RMMapBoxSource *onlineSource = [[RMMapBoxSource alloc] initWithMapID:@"cdawson.map-rfzl19el"];
 
     if(onlineSource == nil) [self showOfflineMessage];
 
